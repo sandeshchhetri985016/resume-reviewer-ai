@@ -1,0 +1,72 @@
+ATS (Applicant Tracking System) Best Practices for Resume Success
+
+1. EXACT KEYWORD MATCHING
+ATS systems scan for exact keywords from the job description. If the JD says "managed a team of 5", your resume must say "managed a team of 5" — not "supervised 5 people." Always mirror the exact phrasing used in the job posting. This is the single most important rule for passing ATS screening.
+
+2. INDUSTRY CERTIFICATIONS
+Include all relevant certifications in a dedicated "Certifications" section. For healthcare: First Aid, CPR, Manual Handling, NDIS Worker Screening, Working with Children Check, Medication Administration. For IT: AWS, Azure, Google Cloud, CompTIA, Cisco. Place certifications near the top of your resume, ideally right after the summary.
+
+3. YEARS OF EXPERIENCE
+Many ATS filters have a minimum years requirement. Always state your years clearly: "5 years of experience in aged care" rather than implying it through dates. Use both total years and per-role years. The ATS looks for numeric patterns.
+
+4. ACTION VERBS
+Start every bullet point with a strong action verb: achieved, improved, reduced, increased, developed, implemented, coordinated, managed, delivered, facilitated, mentored, optimized, resolved, transformed. Avoid passive language like "was responsible for" or "duties included." Passive verbs weaken your score significantly.
+
+5. QUANTIFIABLE ACHIEVEMENTS
+Numbers are scanned by ATS systems as markers of impact. Examples:
+- Reduced incident reports by 30% through improved protocols
+- Managed a caseload of 15+ clients simultaneously
+- Trained 20+ new staff members annually
+- Maintained 100% compliance during audit inspections
+- Increased client satisfaction scores from 3.8 to 4.6
+- Reduced medication errors by 40% through double-check system
+
+6. RESUME FORMATTING FOR ATS
+- Use standard section headers: Summary, Experience, Education, Skills, Certifications
+- Do NOT use columns, tables, text boxes, or graphics — ATS cannot parse them
+- Use a clean, single-column layout with consistent font
+- Save as PDF only if the job posting specifies PDF; otherwise use .docx
+- Font size should be 10-12pt body, 14-16pt headers
+- Avoid headers/footers — some ATS systems cannot read them
+- Use bullet points (• or -) not custom symbols
+
+7. ATS FILE SCREENING PROCESS
+Step 1: Parse — system extracts text from your file. If parsing fails, your resume is rejected immediately.
+Step 2: Keyword match — system scores against JD keywords (typically 50-70% weight).
+Step 3: Experience filter — checks years, roles, education requirements.
+Step 4: Ranking — your resume gets a score. Only top 10-25% proceed to a human.
+Most candidates are rejected in Step 1 (parse failure) or Step 2 (low keyword score). Human review happens only after all automated steps.
+
+8. COMMON ATS PITFALLS
+- Using acronyms without spelling them out: write "NDIS (National Disability Insurance Scheme)" on first use
+- Missing location details: include city and state for every role
+- Gap in employment without explanation: ATS flags gaps over 6 months
+- Overly creative formatting: fancy templates with graphics fail parsing
+- No skills section: ATS specifically looks for a dedicated skills area
+- Using images or logos: these cannot be parsed and may corrupt extraction
+- PDF scanned from image: must be selectable text, not a scanned picture
+
+9. ATS KEYWORD CATEGORIES
+Must-have keywords: appear 3+ times in the job description (include these in your resume verbatim).
+Nice-to-have keywords: appear 1-2 times in the JD (include if space permits).
+Industry keywords: standard terms for your field (always include these).
+Soft skills keywords: communication, teamwork, leadership (use with evidence, not alone).
+
+10. TAILORING FOR EACH APPLICATION
+Do not send the same resume to every job. For each role:
+- Identify 10-15 keywords from the job description
+- Ensure those exact words appear in your resume
+- Reorder bullet points to match the JD's priority order
+- Adjust your summary to mirror the JD's language
+- Remove irrelevant experience if it dilutes keyword density
+
+11. ATS SCORING BREAKDOWN
+Typically ATS scores are weighted as:
+- Keyword match (exact + synonym): 50%
+- Experience relevance (years + role fit): 25%
+- Education match: 15%
+- Formatting & readability: 10%
+A score of 80%+ usually guarantees a human review. 60-79% may proceed depending on applicant volume. Below 60% is typically auto-rejected.
+
+12. HYBRID ROLES AND ATS
+For hybrid roles (e.g., healthcare IT, aged care management), create separate keyword lists for each domain. Your resume must satisfy both. Example: "Managed implementation of electronic health records system" satisfies both healthcare AND IT keywords simultaneously.

@@ -1,0 +1,9 @@
+openai
+python-dotenv
+streamlit
+pypdf
+plotly
+reportlab
+sentence-transformers
+chromadb
+torchvision

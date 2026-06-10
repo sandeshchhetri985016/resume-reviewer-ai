@@ -1,0 +1,6 @@
+.env
+__pycache__/
+.venv/
+resume_app.log
+chroma_db/
+nul
