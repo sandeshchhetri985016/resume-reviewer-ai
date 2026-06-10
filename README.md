@@ -112,8 +112,8 @@ resume-reviewer/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/resume-reviewer.git
-cd resume-reviewer
+git clone https://github.com/sandeshchhetri985016/resume-reviewer-ai.git
+cd resume-reviewer-ai
 ```
 
 ### 2. Create a virtual environment
