@@ -32,16 +32,19 @@ Job seekers face three challenges:
 - As a user, I see specific strengths, weaknesses, and improvements
 - As a user, I can visualize my resume score with a gauge chart and radar chart
 - As a user, I can download a PDF report of the analysis
+- As a user, I want the scoring to be transparent — I can see the weighted rubric breakdown
 
 ### Should-Have
 - As a user, I want domain-specific knowledge to influence the analysis (RAG)
 - As a user, I want the feedback to be detailed sentences, not single words
 - As a user, I want consistent scoring across different resume types
+- As a user, I want the system to automatically detect my industry and filter knowledge accordingly (embedding-based domain classification)
+- As a user, in ATS mode I want to see exactly which keywords I'm missing from the job description
 
 ### Could-Have
-- As a user, I want query routing to detect my industry and filter knowledge accordingly
 - As a user, I want reranking for improved retrieval relevance
 - As a user, I can compare two resumes side by side
+- As a user, I want before/after rewrite suggestions for weak resume sections
 
 ## 5. Functional Requirements
 
@@ -76,9 +79,12 @@ Job seekers face three challenges:
 
 | Metric | Current | Target |
 |--------|---------|--------|
-| Knowledge chunks | 261 | 500+ |
+| Knowledge chunks | 289 | 500+ |
 | Knowledge domains | 18 | 30+ |
 | Retrieval distance (< 0.70 = good) | ~0.56 for plumber query | < 0.70 for all domains |
+| Domain classifier accuracy | 0.69-0.90 similarity, no false positives | < 0.03 margin triggers top-2 search |
+| Scoring | 100% deterministic rubric (no AI) | Maintain |
+| ATS model fallback | 3 model retry loop | Auto-recover from content-safety routing |
 | Reranking | Not implemented | Cross-encoder v2 |
 
 ## 8. Scope

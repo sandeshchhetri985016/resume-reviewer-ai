@@ -1,47 +1,59 @@
-Aviation & Pilot Career Keywords for Resume Optimization
+# Aviation Resume Evaluation Guidance
+# Use this to evaluate and provide feedback on aviation resumes.
 
-1. PILOT ROLES AND LICENSES
-Commercial Pilot, Airline Transport Pilot, Private Pilot, Student Pilot, Flight Instructor, Certified Flight Instructor (CFI), Instrument Flight Instructor (CFII), Multi-Engine Instructor (MEI), Airline Captain, First Officer, Second Officer, Pilot in Command (PIC), Second in Command (SIC), Check Airman, Designated Pilot Examiner, Corporate Pilot, Charter Pilot, Cargo Pilot, Agricultural Pilot, Bush Pilot, Helicopter Pilot, Glider Pilot, Flight Engineer, Navigation Officer, Remote Pilot (Drone), Unmanned Aerial Vehicle (UAV) Operator.
+## Key Resume Strengths to Look For
+- Flight hours and type ratings with specific aircraft models
+- Safety record metrics (incident-free hours, safety awards)
+- Licenses and ratings (CASA, FAA, EASA, ATPL, CPL, PPL, IR, ME)
+- Crew coordination and leadership experience
+- Regulatory compliance knowledge (CASR, CAR, ICAO Annexes)
+- Simulation and training experience
 
-2. PILOT CERTIFICATIONS AND LICENSES (AUSTRALIA CASA)
-CASA (Civil Aviation Safety Authority), Recreational Pilot Licence (RPL), Private Pilot Licence (PPL), Commercial Pilot Licence (CPL), Airline Transport Pilot Licence (ATPL), Multi-Engine Command Instrument Rating (MECIR), Single-Engine Command Instrument Rating (SECIR), Class 1 Medical Certificate, Class 2 Medical Certificate, Dangerous Goods Certificate, Aviation Security Identification Card (ASIC), Radio Telephone Operator Licence, Low Level Rating, Formation Flying Rating, Night VFR Rating, Instructor Rating, Grade 1 Instructor, Grade 2 Instructor, Grade 3 Instructor, Multi-Crew Cooperation (MCC) Course, Jet Orientation Course, Type Rating (Boeing 737, Airbus A320, etc.).
+## Metrics That Impress Aviation Employers
+- Total flight hours (PIC, dual, instrument, night)
+- Years of incident-free operations
+- Aircraft types endorsed and total hours per type
+- Training throughput (e.g., "Delivered ground school to 50+ cadets")
+- Check ride pass rates
+- Passengers or cargo transported statistics
 
-3. FLIGHT HOURS AND EXPERIENCE
-Total Flight Hours, Pilot in Command (PIC) Hours, Co-Pilot Hours, Multi-Engine Hours, Instrument Flight Hours, Night Flight Hours, Cross-Country Hours, Simulator Hours, Actual Instrument Time, Simulated Instrument Time, Flight Training Hours, Solo Flight Hours, Dual Instruction Hours, Cross-Country PIC, Recent Flight Experience, Last 90 Days, Last 6 Months, Last 12 Months, Total Time, Turbine Time, Jet Time, Turbo Prop Time, Glass Cockpit Time, Stick and Rudder Skills.
+## Key Areas to Evaluate
+### Licenses & Ratings
+- CASA License (ATPL, CPL, PPL) with class ratings
+- Instrument Rating, Multi-Engine Command
+- Type Ratings (Boeing, Airbus, Dash-8, etc.)
+- Instructor Ratings (Grade 1/2/3, AFF, IRE, TRE)
+- Medical Class 1/2 current
+- Dangerous goods, CRM, TEM, SMS training
 
-4. AIRCRAFT TYPES AND SYSTEMS
-Single Engine Piston (SEP): Cessna 152, Cessna 172, Piper PA-28 Cherokee, Piper PA-44 Seminole, Diamond DA40, Diamond DA42, Tecnam P2002, Beechcraft Bonanza.
-Multi Engine Piston (MEP): Piper Seneca, Beechcraft Baron, Cessna 310, Diamond DA62.
-Turboprop: Beechcraft King Air, Pilatus PC-12, Cessna Caravan, ATR 42/72, Dash 8 Q400, Saab 340, Embraer EMB 120.
-Jet Aircraft: Boeing 737, Airbus A320, Embraer E190, Bombardier CRJ, Gulfstream G550, Cessna Citation, Dassault Falcon, Airbus A380, Boeing 777, Boeing 787 Dreamliner, Boeing 747.
-Aircraft Systems: Avionics, Glass Cockpit, Garmin G1000, Garmin GTN 750, Honeywell Primus Epic, Flight Management System (FMS), Autopilot, Auto-Throttle, Instrument Landing System (ILS), VOR, NDB, DME, GPS, RNAV, RNP, TCAS, Weather Radar, Transponder, ADS-B, Emergency Locator Transmitter (ELT), Engine Monitoring Systems.
+### Experience Types
+- Airline operations (regular public transport)
+- Charter and corporate aviation
+- Flight instruction and training
+- Agricultural, aerial survey, or specialized operations
+- Military aviation experience
+- Remote pilot (drone / RPA) operations
 
-5. AVIATION KNOWLEDGE AREAS
-Aerodynamics, Principles of Flight, Aircraft Performance, Weight and Balance, Meteorology, Aviation Weather, AIRMET, SIGMET, METAR, TAF, Weather Charts, Wind Shear, Icing, Turbulence, Thunderstorms, Navigation, Visual Navigation, Instrument Navigation, Radio Navigation, Flight Planning, Fuel Planning, Alternate Airports, NOTAMs, Airspace Classification, Controlled Airspace, Uncontrolled Airspace, Special Use Airspace, Air Traffic Control (ATC), Clearances, Standard Terminal Arrival (STAR), Standard Instrument Departure (SID), Holding Patterns, Approach Procedures, Precision Approach, Non-Precision Approach, Circling Approach, Missed Approach, Go-Around, Human Factors, Crew Resource Management (CRM), Threat and Error Management (TEM), Fatigue Management, Situational Awareness, Decision Making, Risk Management, Safety Management Systems (SMS). Aviation Terminology, Aviation Acronyms.
+### Non-Technical Skills
+- Crew resource management (CRM) examples
+- Decision-making under pressure
+- Communication with ATC and crew
+- Fatigue management understanding
+- Passenger service and emergency handling
 
-6. AVIATION SAFETY AND REGULATIONS
-CASA Regulations, Civil Aviation Safety Regulations (CASR), Civil Aviation Orders (CAOs), Civil Aviation Advisory Publications (CAAPs), Instrument of Delegation, Maintenance Release, Certificate of Registration, Certificate of Airworthiness, Airworthiness Directive, Service Bulletin, Mandatory Occurrence Reporting, Aviation Safety Reports, Confidential Reporting Scheme, Runway Incursion, Bird Strike, Wake Turbulence, Stall, Spin, Upset Prevention and Recovery Training (UPRT), Loss of Control In-Flight (LOC-I), Controlled Flight Into Terrain (CFIT), Mid-Air Collision Avoidance, See and Avoid, Sterile Cockpit Rule, Safety Belt, Shoulder Harness, Emergency Procedures, Engine Failure After Takeoff, Engine Failure In-Flight, Forced Landing, Precautionary Landing, Ditching, Fire In-Flight, Smoke Removal, Depressurisation, Emergency Descent, Diversion, Mayday, Pan-Pan, ELT Activation.
+## Common Resume Mistakes in Aviation
+- Flight hours not broken down by category (PIC, dual, instrument, etc.)
+- Missing license numbers, ratings, or medical expiry dates
+- No type ratings or aircraft-specific hours
+- Safety record not mentioned
+- Gaps in flying history unexplained
+- Instructor experience not quantified (students trained, check rides)
 
-7. AVIATION CAREER PATH AND PROGRESSION
-Flight School, Integrated Course, Modular Course, Self-Funded Training, Airline Cadet Program, Airline Sponsorship, Ab Initio Training, Zero Time to Airline, Multi-Crew Pilot Licence (MPL), Path to Airline Transport Pilot Licence, Regional Airline First Officer, Major Airline First Officer, Command Upgrade, Captain Upgrade, Check Captain, Training Captain, Fleet Manager, Chief Pilot, Head of Flight Operations, Director of Operations, Accountable Manager, Safety Manager, Compliance Manager.
-
-8. KEY SKILLS FOR PILOT RESUME
-Strong Communication, Decision Making Under Pressure, Leadership, Teamwork, Situational Awareness, Multitasking, Attention to Detail, Discipline, Adaptability, Stress Management, Time Management, Problem Solving, Analytical Thinking, Manual Dexterity, Hand-Eye Coordination, Spatial Awareness, Numerical Ability, English Language Proficiency (ICAO Level 4, 5, 6), Customer Service Orientation, Professionalism, Integrity, Reliability, Flexibility, Continuous Learning.
-
-9. AVIATION RESUME KEYWORDS
-Flight Operations, Line Operations, Charter Operations, Scheduled Operations, VIP Operations, Air Ambulance, Aerial Work, Aerial Survey, Aerial Photography, Firefighting, Search and Rescue, Law Enforcement, Border Patrol, Maritime Patrol, Offshore Operations, On-Demand Charter, Fractional Ownership, Aircraft Management, Wet Lease, Dry Lease, ACMI (Aircraft, Crew, Maintenance, Insurance), Block Hours, Duty Period, Flight Time Limitations (FTL), Crew Pairing, Rostering, Base Assignment, Layover, Overnight, Standby, Reserve, Ready Reserve, Call Out, Sign-On, Sign-Off, Pre-Flight Briefing, Post-Flight Debrief, Walkaround, Pre-Flight Inspection, External Check, Internal Check, Fuel Check, Oil Check, Tire Check, Brake Check, De-Icing, Anti-Icing, Pushback, Taxi, Takeoff, Climb, Cruise, Descent, Approach, Landing, Rollout, Parking, Securing Aircraft.
-
-10. AVIATION TRAINING AND EDUCATION
-Bachelor of Aviation, Diploma of Aviation, Associate Degree in Aviation, Flight Training Organization (FTO), Approved Training Organization (ATO), Registered Training Organization (RTO), CASA Approved Flight School, EASA Approved Training, FAA Approved Training, ICAO Compliance, MCC Course, CRM Training, UPRT Course, Type Rating Course, Command Course, Instructor Course, Ground School, Theory Exams, Flight Test, Skill Test, Proficiency Check, Operator Proficiency Check (OPC), Line Check, Base Check, Annual Recurrent Training, Emergency Procedures Training, First Aid Training, Aviation English Training, Dangerous Goods Training, Security Training.
-
-11. AVIATION MEDICAL REQUIREMENTS
-Class 1 Medical, Class 2 Medical, CASA Designated Aviation Medical Examiner (DAME), ECG, Audiogram, Vision Test, Color Vision, Blood Test, Urine Test, Medical History, Medication Declaration, Condition Exemption, Special Issuance, Medical Suspension, Medical Revocation, Reinstatement, Approved Medical Conditions, Diabetes, Asthma, Hypertension, Corrected Vision, Laser Eye Surgery, Refractive Surgery, PRK, LASIK, SMILE, Color Deficiency Assessment, CVD, Ishihara Test, Farnsworth Lantern Test, Aviation Neurology, Aviation Cardiology, Aviation Psychiatry, AME Consultation.
-
-12. INTERNATIONAL AVIATION STANDARDS
-ICAO (International Civil Aviation Organization), ICAO Annex 1 (Personnel Licensing), ICAO Annex 2 (Rules of the Air), ICAO Annex 6 (Operation of Aircraft), ICAO Annex 8 (Airworthiness), ICAO Annex 13 (Accident Investigation), ICAO Annex 19 (Safety Management), ICAO Language Proficiency Requirements, ICAO Level 4, ICAO Level 5, ICAO Level 6, EASA (European Union Aviation Safety Agency), FAA (Federal Aviation Administration), JAA (Joint Aviation Authorities), CASA (Australia), Transport Canada, CAA (UK), CAAC (China), DGCA (India), GCAA (UAE), SACAA (South Africa), ANAC (Brazil).
-
-13. AVIATION SOFTWARE AND TOOLS
-Flight Planning Software, ForeFlight, Jeppesen, FltPlan.com, AeroPlanner, RocketRoute, EuroNav, SkyDemon, Garmin Pilot, WingX Pro, Aircraft Logbook Software, LogTen, MyFlightBook, CloudAhoy, Air Navigation Pro, Flight Simulator, Microsoft Flight Simulator, X-Plane, Prepar3D, Level D Simulator, Full Flight Simulator (FFS), Flight Training Device (FTD), Aviation Maintenance Software, AMOS, Traxx, Rusada, Corridor, WinAir.
-
-14. COMMON PILOT INTERVIEW TOPICS
-Technical Interview, Competency-Based Interview, Behavioral Questions, Situational Questions, STAR Method, Resume Walkthrough, Flight Scenario Questions, Decision Making Questions, Crew Resource Management Questions, Aviation Regulations Questions, Aircraft Systems Questions, Meteorology Questions, Navigation Questions, Human Factors Questions, Simulator Assessment, Psychometric Testing, Aptitude Testing, Coordination Testing, Multi-Tasking Testing, Group Exercise, Presentation, Command Potential Assessment.
+## Resume Structure Recommendations
+1. Professional Summary (total hours, licenses, key experience)
+2. Licenses & Ratings (with license numbers and expiry dates)
+3. Flight Experience (hours by category: PIC, Co-pilot, Instrument, Night, etc.)
+4. Professional Experience (airline/operator, aircraft type, role, dates)
+5. Training & Instruction (if applicable)
+6. Education (aviation degree, certifications)
+7. Additional: Medical class, security clearances, language proficiency

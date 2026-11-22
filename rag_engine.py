@@ -6,16 +6,23 @@ What this does:
 2. Splits them into overlapping chunks (200-500 chars)
 3. Converts each chunk into a vector embedding (384 numbers)
 4. Stores vectors in a local ChromaDB database
-5. At query time, embeds the query and finds the most similar chunks
-6. Returns only those relevant chunks to be injected into the LLM prompt
-
-This replaces the old load_knowledge() which dumped ALL files verbatim.
+5. At query time, classifies resume domain, then finds most similar chunks within that domain
 """
 
 import os
 import re
 import hashlib
+import warnings
+import tarfile
+import shutil
+from datetime import datetime
 from pathlib import Path
+
+# Suppress noisy transformers submodule path warnings
+os.environ["TRANSFORMERS_NO_ADVISORY_WARNINGS"] = "1"
+os.environ["HF_HUB_DISABLE_SYMLINKS_WARNING"] = "1"
+warnings.filterwarnings("ignore", message=".*Accessing `__path__`.*")
+warnings.filterwarnings("ignore", message=".*Examining the path of.*")
 
 # ---------------------------------------------------------------------------
 # These are 100% free, local packages. No API keys, no accounts, no trials.
@@ -48,16 +55,106 @@ CHUNK_MAX_CHARS = 500                           # Maximum characters per chunk
 CHUNK_OVERLAP = 50                              # Overlap between consecutive chunks
 RETRIEVE_TOP_K = 3                              # Number of chunks to return per query
 
+# ---------------------------------------------------------------------------
+# Domain descriptions for embedding-based classification
+# Each description captures what a typical resume in that domain looks like.
+# The embedder (already loaded) converts these to vectors, then we compare
+# the resume embedding against each domain embedding via cosine similarity.
+# This is far more accurate than keyword counting and costs nothing extra
+# since the embedder is already loaded for RAG.
+# ---------------------------------------------------------------------------
+DOMAIN_DESCRIPTIONS = {
+    "healthcare": (
+        "Personal care worker support worker disability support aged care ndis patient care "
+        "medication assistance manual handling dementia palliative care daily living support "
+        "community access client advocacy care plans"
+    ),
+    "nursing": (
+        "Registered nurse enrolled nurse ahpra medication administration wound care "
+        "vital signs patient assessment clinical handover triage iv therapy "
+        "nursing care plans clinical documentation infection control"
+    ),
+    "aged_care": (
+        "Aged care residential aged care nursing home dementia care acfi an-acc "
+        "falls prevention pressure care continence mealtime management "
+        "home care packages chsp personal care elderly support"
+    ),
+    "software_engineering": (
+        "Software engineer developer python java javascript react node django "
+        "full stack backend frontend api microservices aws docker kubernetes "
+        "git ci cd agile scrum sql database system design testing"
+    ),
+    "cloud_engineering": (
+        "Cloud engineer devops aws azure gcp terraform kubernetes docker "
+        "infrastructure as code cloud migration ci cd pipelines monitoring "
+        "site reliability high availability disaster recovery security"
+    ),
+    "data_science": (
+        "Data scientist data analyst machine learning deep learning python "
+        "sql statistics tensorflow pytorch a b testing data visualization "
+        "tableau power bi predictive modeling feature engineering"
+    ),
+    "cyber_security": (
+        "Cyber security information security penetration testing ethical hacking "
+        "cissp firewall siem vulnerability assessment incident response "
+        "risk assessment compliance nist iso 27001 threat intelligence"
+    ),
+    "accounting": (
+        "Accountant accounting cpa ca bookkeeping financial reporting "
+        "xero quickbooks myob sap reconciliation budgeting forecasting "
+        "tax gst bas audit month end close balance sheet"
+    ),
+    "marketing": (
+        "Marketing digital marketing seo sem google ads social media "
+        "content marketing email marketing hubspot google analytics "
+        "campaign conversion lead generation brand roi roas"
+    ),
+    "hr": (
+        "Human resources hr recruitment talent acquisition employee relations "
+        "payroll performance management onboarding training workday "
+        "industrial relations fair work policy development whs"
+    ),
+    "logistics": (
+        "Logistics supply chain warehouse inventory management freight "
+        "distribution transport fleet procurement shipping receiving "
+        "wms sap on time delivery demand planning continuous improvement"
+    ),
+    "construction": (
+        "Construction trade builder carpenter bricklayer stonemason roofer "
+        "excavator bulldozer crane operator rigger concreter formwork "
+        "structural steel welding fabrication demolition earthmoving"
+    ),
+    "electrician": (
+        "Electrician electrical a grade switchboard wiring cabling "
+        "solar pv test and tag fault finding motor control "
+        "commercial industrial domestic fire panel data cabling"
+    ),
+    "plumber": (
+        "Plumber plumbing gas fitter gas fitting drainage hot water "
+        "sewer stormwater roofing pipe backflow water supply "
+        "commercial domestic maintenance excavation"
+    ),
+    "aviation": (
+        "Pilot aviation flight casa atpl cpl ppl instrument rating "
+        "multi engine type rating first officer crew resource management "
+        "safety simulator check ride commercial operations"
+    ),
+    "mobile_development": (
+        "Mobile developer ios android swift kotlin flutter react native "
+        "app store google play uikit swiftui jetpack compose "
+        "push notifications offline storage mobile architecture"
+    ),
+}
+
 
 class RagEngine:
     """
-    A minimal RAG engine.
+    A minimal RAG engine with domain-aware retrieval.
 
     Usage:
         engine = RagEngine()
         engine.build_index()          # Run once to index all knowledge files
         chunks = engine.retrieve("resume for aged care")  # Get top 3 relevant chunks
-        prompt = f"Context:\\n{chunks}\\n\\nResume:\\n{resume}"
     """
 
     def __init__(self):
@@ -74,13 +171,11 @@ class RagEngine:
             )
 
         # Step A: Load the embedding model (downloads ~80 MB on first run)
-        # all-MiniLM-L6-v2 creates 384-dimensional vectors.
         print("[RAG] Loading embedding model:", EMBEDDING_MODEL_NAME)
         self.embedder = SentenceTransformer(EMBEDDING_MODEL_NAME)
         print("[RAG] Model loaded successfully.")
 
         # Step B: Connect to ChromaDB (creates ./chroma_db/ directory on first run)
-        # Settings(anonymized_telemetry=False) disables the telemetry prompt.
         CHROMA_DB_DIR.mkdir(exist_ok=True)
         self.chroma_client = chromadb.PersistentClient(
             path=str(CHROMA_DB_DIR),
@@ -88,24 +183,156 @@ class RagEngine:
         )
 
         # Step C: Get or create the collection
-        # A collection is like a "table" for vectors.
         try:
             self.collection = self.chroma_client.get_collection(COLLECTION_NAME)
             print(f"[RAG] Found existing collection '{COLLECTION_NAME}' "
                   f"with {self.collection.count()} chunks.")
-        except Exception:
+        except (KeyError, ValueError):
+            # Collection doesn't exist, create new one
             self.collection = self.chroma_client.create_collection(COLLECTION_NAME)
             print(f"[RAG] Created new collection '{COLLECTION_NAME}'.")
 
         # Step D: Track which files have been indexed (by content hash)
         self.indexed_files = set()
         if self.collection.count() > 0:
-            # Read metadata from ChromaDB to know which files were indexed
             results = self.collection.get(include=["metadatas"])
             if results and results["metadatas"]:
                 for meta in results["metadatas"]:
                     if meta and "source_file" in meta:
                         self.indexed_files.add(meta["source_file"])
+
+        # Step E: Domain embeddings cache (lazy-loaded on first classify)
+        self._domain_embeddings = None
+        self._domain_names = None
+
+        # Step F: Backup and recovery on startup
+        self._ensure_backup()
+
+    def _ensure_backup(self):
+        """Create a backup of ChromaDB on startup, keeping last 3 backups."""
+        if not CHROMA_DB_DIR.exists():
+            return
+        
+        backup_dir = CHROMA_DB_DIR.parent / "chroma_db_backups"
+        backup_dir.mkdir(exist_ok=True)
+        
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        backup_path = backup_dir / f"chroma_db_backup_{timestamp}.tar.gz"
+        
+        try:
+            with tarfile.open(backup_path, "w:gz") as tar:
+                tar.add(CHROMA_DB_DIR, arcname="chroma_db")
+            print(f"[RAG] Backup created: {backup_path}")
+        except Exception as backup_error:
+            print(f"[RAG] Warning: Could not create backup: {backup_error}")
+            return
+        
+        # Clean up old backups (keep only last 3)
+        try:
+            backups = sorted(backup_dir.glob("chroma_db_backup_*.tar.gz"))
+            if len(backups) > 3:
+                for old_backup in backups[:-3]:
+                    old_backup.unlink()
+                    print(f"[RAG] Removed old backup: {old_backup.name}")
+        except Exception as cleanup_error:
+            print(f"[RAG] Warning: Could not clean old backups: {cleanup_error}")
+
+    @staticmethod
+    def recover_from_backup():
+        """Recover ChromaDB from the latest backup if main DB is corrupted."""
+        backup_dir = CHROMA_DB_DIR.parent / "chroma_db_backups"
+        if not backup_dir.exists():
+            print("[RAG] No backups available for recovery.")
+            return False
+        
+        backups = sorted(backup_dir.glob("chroma_db_backup_*.tar.gz"), reverse=True)
+        if not backups:
+            print("[RAG] No backups found.")
+            return False
+        
+        latest_backup = backups[0]
+        try:
+            # Remove corrupted DB
+            if CHROMA_DB_DIR.exists():
+                import shutil
+                shutil.rmtree(CHROMA_DB_DIR)
+            
+            # Extract backup
+            with tarfile.open(latest_backup, "r:gz") as tar:
+                tar.extractall(path=CHROMA_DB_DIR.parent)
+            
+            print(f"[RAG] Successfully recovered from backup: {latest_backup.name}")
+            return True
+        except Exception as recovery_error:
+            print(f"[RAG] Recovery failed: {recovery_error}")
+            return False
+
+    @staticmethod
+    def _domain_to_chunk_domain(domain: str) -> list:
+        """
+        Map classifier domain names to actual ChromaDB domain metadata values.
+        The ChromaDB domain metadata is derived from the filename (e.g., 'healthcare_keywords.txt' → 'healthcare_keywords').
+        The classifier returns canonical names (e.g., 'healthcare').
+        This mapping ensures they match.
+        """
+        mapping = {
+            "healthcare": ["healthcare_keywords"],
+            "nursing": ["nursing"],
+            "aged_care": ["aged_care"],
+            "software_engineering": ["software_engineering"],
+            "cloud_engineering": ["cloud_engineering"],
+            "data_science": ["data_science"],
+            "cyber_security": ["cyber_security"],
+            "accounting": ["accounting"],
+            "marketing": ["marketing"],
+            "hr": ["hr"],
+            "logistics": ["logistics"],
+            "construction": ["construction"],
+            "electrician": ["electrician"],
+            "plumber": ["plumber"],
+            "aviation": ["aviation"],
+            "mobile_development": ["mobile_development"],
+        }
+        return mapping.get(domain, [domain])
+
+    # ------------------------------------------------------------------
+    # DOMAIN CLASSIFICATION — embedding-based, uses pre-loaded embedder
+    # ------------------------------------------------------------------
+    def classify_domain(self, text: str) -> tuple:
+        """
+        Classify text into a career domain using embedding similarity.
+        Uses the already-loaded sentence-transformer model (zero extra cost).
+
+        Returns:
+            (best_domain: str, similarity: float, all_similarities: list)
+            - best_domain: the most similar domain key
+            - similarity: cosine similarity score (0-1, higher = more similar)
+            - all_similarities: list of (domain, similarity) for all domains
+        """
+        if self._domain_embeddings is None:
+            print("[RAG] Pre-computing domain embeddings for classification...")
+            domain_texts = list(DOMAIN_DESCRIPTIONS.values())
+            self._domain_embeddings = self.embedder.encode(domain_texts)
+            self._domain_names = list(DOMAIN_DESCRIPTIONS.keys())
+            print(f"[RAG] Computed {len(self._domain_embeddings)} domain embeddings.")
+
+        # Embed the query text
+        query_emb = self.embedder.encode([text])[0]
+
+        # Compute cosine similarities against all domain embeddings
+        similarities = []
+        for i, domain_vec in enumerate(self._domain_embeddings):
+            dot = sum(q * d for q, d in zip(query_emb, domain_vec))
+            norm_q = sum(q * q for q in query_emb) ** 0.5
+            norm_d = sum(d * d for d in domain_vec) ** 0.5
+            sim = dot / (norm_q * norm_d) if norm_q * norm_d > 0 else 0
+            similarities.append((self._domain_names[i], sim))
+
+        # Sort by similarity descending
+        similarities.sort(key=lambda x: -x[1])
+        best = similarities[0]
+
+        return (best[0], round(best[1], 4), similarities)
 
     # ------------------------------------------------------------------
     # CHUNKING
@@ -113,60 +340,95 @@ class RagEngine:
     @staticmethod
     def _chunk_text(text, source_file):
         """
-        Split a text into overlapping chunks.
-
-        Why overlapping?
-        If a sentence is cut at the boundary, the context is lost.
-        Overlap ensures each chunk has some context from the previous one.
-
-        Returns list of dicts: [{"text": "...", "source": "...", "index": 0}, ...]
+        Split a text into chunks with heading-aware boundaries.
+        Each chunk starts at a heading boundary (## , ## Key, etc.) or paragraph break.
+        This prevents mid-sentence fragments and keeps logical sections intact.
         """
-        # Normalize whitespace: collapse multiple newlines into one
+        # Normalize whitespace
+        text = re.sub(r"\r\n", "\n", text)
         text = re.sub(r"\n{3,}", "\n\n", text)
         text = text.strip()
 
+        # Find all heading positions (lines starting with ##)
+        # Also treat lines starting with section numbers (1., 2., etc.) as potential boundaries
+        heading_positions = []
+        for m in re.finditer(r"^##?\s+\w|^\d+\.\s+\w|^KEY|^RESUME|^COMMON|^CRITICAL|^CERTIFICATIONS|^METRICS|^RESUME STRUCTURE|^RED FLAGS", text, re.MULTILINE):
+            heading_positions.append(m.start())
+
         chunks = []
-        start = 0
+        if not heading_positions:
+            # No headings found — fall back to paragraph-based splitting
+            heading_positions = [0]
+            for m in re.finditer(r"\n\n", text):
+                heading_positions.append(m.end())
 
-        while start < len(text):
-            # Find a good break point: try to end at a sentence or paragraph
-            end = min(start + CHUNK_MAX_CHARS, len(text))
-
-            if end < len(text):
-                # Try to cut at a period + newline (paragraph boundary)
-                paragraph_break = text.rfind(".\n", start, end)
-                if paragraph_break > start + CHUNK_MIN_CHARS:
-                    end = paragraph_break + 1  # include the period
-                else:
-                    # Try to cut at a period (sentence boundary)
-                    sentence_break = text.rfind(". ", start, end)
-                    if sentence_break > start + CHUNK_MIN_CHARS:
-                        end = sentence_break + 1  # include the period
-                    else:
-                        # Try to cut at a newline
-                        newline_break = text.rfind("\n", start, end)
-                        if newline_break > start + CHUNK_MIN_CHARS:
-                            end = newline_break
+        # Build chunks from heading boundaries
+        for i, start in enumerate(heading_positions):
+            if i + 1 < len(heading_positions):
+                end = heading_positions[i + 1]
+            else:
+                end = len(text)
 
             chunk_text = text[start:end].strip()
-            if chunk_text and len(chunk_text) >= CHUNK_MIN_CHARS / 2:
+            if not chunk_text:
+                continue
+
+            # If chunk is too large, split it at paragraph boundaries
+            if len(chunk_text) > CHUNK_MAX_CHARS:
+                # Find paragraph breaks within this chunk
+                para_breaks = [m.end() for m in re.finditer(r"\n\n", chunk_text)]
+                if para_breaks:
+                    sub_start = 0
+                    for pb in para_breaks:
+                        sub_chunk = chunk_text[sub_start:pb].strip()
+                        if sub_chunk:
+                            chunks.append({
+                                "text": sub_chunk,
+                                "source": source_file,
+                                "index": len(chunks)
+                            })
+                        sub_start = pb
+                    # Remaining after last paragraph break
+                    remaining = chunk_text[sub_start:].strip()
+                    if remaining:
+                        chunks.append({
+                            "text": remaining,
+                            "source": source_file,
+                            "index": len(chunks)
+                        })
+                else:
+                    # No paragraph breaks — split at sentence boundaries
+                    sentences = re.split(r"(?<=\.) ", chunk_text)
+                    sub_chunk = ""
+                    for sent in sentences:
+                        if len(sub_chunk) + len(sent) < CHUNK_MAX_CHARS:
+                            sub_chunk += sent + " "
+                        else:
+                            if sub_chunk.strip():
+                                chunks.append({
+                                    "text": sub_chunk.strip(),
+                                    "source": source_file,
+                                    "index": len(chunks)
+                                })
+                            sub_chunk = sent + " "
+                    if sub_chunk.strip():
+                        chunks.append({
+                            "text": sub_chunk.strip(),
+                            "source": source_file,
+                            "index": len(chunks)
+                        })
+            else:
                 chunks.append({
                     "text": chunk_text,
                     "source": source_file,
                     "index": len(chunks)
                 })
 
-            # Move forward, but leave some overlap
-            start = end - CHUNK_OVERLAP if end < len(text) else len(text)
-
         return chunks
 
     @staticmethod
     def _get_file_hash(filepath):
-        """
-        Compute a quick hash of the file contents.
-        Used to detect if a file has changed since last indexing.
-        """
+        """Compute a quick hash of the file contents."""
         with open(filepath, "rb") as f:
             return hashlib.md5(f.read()).hexdigest()
 
@@ -176,9 +438,7 @@ class RagEngine:
     def build_index(self):
         """
         Read all .txt files from knowledge/, chunk them, embed them,
-        and store in ChromaDB.
-
-        Only re-indexes files that have changed (by content hash).
+        and store in ChromaDB. Only re-indexes changed files.
         """
         txt_files = sorted(KNOWLEDGE_DIR.glob("**/*.txt"))
 
@@ -193,8 +453,6 @@ class RagEngine:
 
         for filepath in txt_files:
             current_hash = self._get_file_hash(filepath)
-            # Store hash as a metadata marker — if the file content changes,
-            # the hash changes, and we'll re-index it.
             file_key = f"{filepath.name}:{current_hash}"
 
             if file_key in self.indexed_files:
@@ -213,21 +471,20 @@ class RagEngine:
 
         print(f"[RAG] Embedding {len(all_chunks)} new chunk(s)...")
 
-        # Step 2: Convert all chunks to vectors in one batch
         texts = [c["text"] for c in all_chunks]
         embeddings = self.embedder.encode(texts, show_progress_bar=True)
 
-        # Step 3: Store in ChromaDB
         ids = []
         metadatas = []
         for i, chunk in enumerate(all_chunks):
-            # ChromaDB needs unique IDs
             chunk_id = f"{chunk['source']}_chunk_{chunk['index']}"
+            domain_key = chunk['source'].replace('.txt', '')
             ids.append(chunk_id)
             metadatas.append({
                 "source_file": f"{chunk['source']}:{self._get_file_hash(KNOWLEDGE_DIR / chunk['source'])}",
                 "chunk_index": chunk["index"],
-                "text": chunk["text"]
+                "text": chunk["text"],
+                "domain": domain_key
             })
 
         self.collection.add(
@@ -240,55 +497,109 @@ class RagEngine:
         print(f"[RAG] Indexing complete. Collection now has {self.collection.count()} chunks.")
 
     # ------------------------------------------------------------------
-    # RETRIEVAL
+    # RETRIEVAL — with embedding-based domain classification + graceful fallback
     # ------------------------------------------------------------------
     def retrieve(self, query, top_k=RETRIEVE_TOP_K):
         """
-        Given a query string (e.g. the user's resume), find the top_k most
-        similar chunks from the knowledge base.
+        Given a resume text, find the top_k most relevant knowledge chunks.
 
-        Steps:
-        1. Embed the query into a vector
-        2. Ask ChromaDB: "find the top_k vectors closest to this one"
-        3. Return the text of those chunks
+        Uses embedding-based domain classification to narrow search to
+        the most relevant domain(s), preventing cross-domain noise.
 
-        Parameters:
-            query (str): The text to search with (usually the user's resume)
-            top_k (int): Number of chunks to return (default: 3)
+        Strategy:
+        - High confidence (>0.6): search only the top domain
+        - Medium confidence (0.4-0.6): search top 2 domains
+        - Low confidence (<0.4): search all domains
+        - Fallback on empty results: search all domains
 
         Returns:
-            str: Concatenated text of the top_k most relevant chunks,
-                 or an empty string if no chunks found.
+            str: Concatenated text of the most relevant chunks
         """
         if self.collection.count() == 0:
-            print("[RAG] Empty collection. Call build_index() first or add knowledge files.")
+            print("[RAG] Empty collection. Call build_index() first.")
             return ""
 
         print(f"[RAG] Retrieving top {top_k} chunks for query ({len(query)} chars)...")
 
-        # Step 4: Embed the query
+        # Step 1: Classify domain using embedding similarity
+        best_domain, sim, all_sims = self.classify_domain(query)
+        print(f"[RAG] Best domain: {best_domain} (similarity: {sim})")
+
+        # Log top 3 domains for debugging
+        for d, s in all_sims[:3]:
+            print(f"[RAG]   {d}: {s}")
+
+        # Step 2: Determine which domains to search
+        # Use margin-based confidence: if #1 and #2 are very close, search both
+        # This handles ambiguous cases like healthcare vs aged_care (0.73 vs 0.72)
+        domains_to_search = []
+        second_domain = all_sims[1][0] if len(all_sims) > 1 else best_domain
+        margin = sim - all_sims[1][1] if len(all_sims) > 1 else 1.0
+
+        if margin < 0.03:
+            # Very close margin — search top 2 regardless of raw score
+            domains_to_search = [best_domain, second_domain]
+            print(f"[RAG] Tight margin ({margin:.4f}) — searching both: {best_domain}, {second_domain}")
+        elif sim >= 0.6:
+            # High confidence with clear winner — search only top domain
+            domains_to_search = [best_domain]
+            print(f"[RAG] High confidence — searching domain: {best_domain}")
+        elif sim >= 0.4:
+            # Medium confidence — search top 2
+            domains_to_search = [best_domain, second_domain]
+            print(f"[RAG] Medium confidence — searching domains: {best_domain}, {second_domain}")
+        else:
+            # Low confidence — search all
+            print(f"[RAG] Low confidence — searching all domains")
+            domains_to_search = [d for d, _ in all_sims]
+
+        # Step 3: Embed the query
         query_embedding = self.embedder.encode([query])
 
-        # Step 5: Search ChromaDB
-        results = self.collection.query(
-            query_embeddings=query_embedding.tolist(),
-            n_results=top_k
-        )
+        # Step 4: Search ChromaDB with domain filter(s)
+        retrieved_texts = []
 
-        if not results or not results["documents"] or not results["documents"][0]:
-            print("[RAG] No relevant chunks found.")
+        for domain in domains_to_search:
+            # Map classifier domain to actual ChromaDB metadata values
+            chunk_domains = self._domain_to_chunk_domain(domain)
+            if not chunk_domains:
+                continue
+            # Use $in operator to match any of the mapped chunk domains
+            domain_filter = {"domain": {"$in": chunk_domains}}
+            results = self.collection.query(
+                query_embeddings=query_embedding.tolist(),
+                n_results=top_k,
+                where=domain_filter
+            )
+
+            if results and results["documents"] and results["documents"][0]:
+                for doc in results["documents"][0]:
+                    if doc not in retrieved_texts:
+                        retrieved_texts.append(doc)
+
+            if len(retrieved_texts) >= top_k:
+                break
+
+        # Step 5: Fallback — if no results, search all domains
+        if not retrieved_texts:
+            print("[RAG] No results from domain-filtered search. Falling back to full search.")
+            results = self.collection.query(
+                query_embeddings=query_embedding.tolist(),
+                n_results=top_k
+            )
+            if results and results["documents"] and results["documents"][0]:
+                retrieved_texts = results["documents"][0]
+
+        if not retrieved_texts:
             return ""
 
-        # Step 6: Combine retrieved chunks into a single string
-        retrieved_texts = results["documents"][0]
-        distances = results["distances"][0] if results["distances"] else []
+        # Limit to top_k
+        retrieved_texts = retrieved_texts[:top_k]
 
         print(f"[RAG] Retrieved {len(retrieved_texts)} chunk(s):")
-        for i, (text, dist) in enumerate(zip(retrieved_texts, distances)):
-            # Cosine similarity is 1 - distance/2 in ChromaDB's default metric
-            # Lower distance = more similar
+        for i, text in enumerate(retrieved_texts):
             preview = text[:80].replace("\n", " ")
-            print(f"  [{i+1}] (distance: {dist:.4f}) {preview}...")
+            print(f"  [{i+1}] {preview}...")
 
         return "\n\n".join(retrieved_texts)
 

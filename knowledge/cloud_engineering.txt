@@ -1,36 +1,42 @@
-Cloud Engineering Career Keywords for Resume Optimization
+# Cloud Engineering Resume Evaluation Guidance
+# Use this to evaluate and provide feedback on cloud engineering resumes.
 
-1. CLOUD ENGINEERING ROLES AND TITLES
-Cloud Engineer, Cloud Architect, Cloud Developer, Cloud Solutions Architect, Cloud Infrastructure Engineer, Cloud Security Engineer, Cloud Network Engineer, Cloud DevOps Engineer, Cloud Platform Engineer, Cloud Systems Administrator, Site Reliability Engineer (SRE), DevOps Engineer, Platform Engineer, Infrastructure Engineer, AWS Engineer, Azure Engineer, GCP Engineer, Cloud Consultant, Cloud Migration Specialist, Cloud Operations Manager, Director of Cloud Engineering, VP of Cloud Architecture.
+## Key Resume Strengths to Look For
+- Cloud certifications (AWS, Azure, GCP) with specific role/certification level
+- Infrastructure-as-Code experience (Terraform, CloudFormation, Pulumi)
+- Cost optimization metrics (e.g., "Reduced cloud spend by 40% through reserved instances")
+- Migration projects (e.g., "Migrated 50 microservices from on-prem to AWS EKS")
+- Incident response and SLO/SLA achievement rates
+- Multi-cloud or hybrid cloud experience
 
-2. CLOUD PLATFORMS AND SERVICES
-Amazon Web Services (AWS): EC2, S3, Lambda, API Gateway, DynamoDB, RDS, Aurora, Route 53, CloudFront, SQS, SNS, SES, Step Functions, CloudFormation, CDK, ECS, EKS, Fargate, ECR, IAM, VPC, CloudTrail, CloudWatch, Kinesis, Glue, Athena, Redshift, SageMaker, Elastic Beanstalk, CodePipeline, CodeBuild, CodeDeploy, WAF, Shield, GuardDuty, Inspector.
-Microsoft Azure: Azure Virtual Machines, Azure App Service, Azure Functions, Azure Kubernetes Service (AKS), Azure DevOps, Azure SQL Database, Cosmos DB, Azure Blob Storage, Azure CDN, Azure Active Directory, Azure Logic Apps, Azure Automation, Azure Policy, Azure Blueprints, Azure Security Center, Azure Monitor, Azure Log Analytics, Azure Traffic Manager, Azure Load Balancer, Azure VPN Gateway, Azure ExpressRoute.
-Google Cloud Platform (GCP): Compute Engine, App Engine, Cloud Functions, Cloud Run, Google Kubernetes Engine (GKE), Cloud Storage, BigQuery, Bigtable, Firestore, Pub/Sub, Dataflow, Dataproc, Cloud Build, Cloud Deploy, Cloud Source Repositories, Cloud Monitoring, Cloud Logging, Cloud Armor, Cloud CDN, Cloud NAT, Cloud VPN, VPC, IAM.
+## Metrics That Impress Cloud Leads
+- Infrastructure uptime/reliability percentages (e.g., "99.99% uptime over 12 months")
+- Cost savings achieved through architecture changes
+- Number of services/infrastructure components managed
+- Deployment frequency improvements (e.g., "Reduced deploy time from 2hrs to 15min")
+- Incident response times (MTTR improvements)
+- Scaling metrics (e.g., "Scaled system from 1K to 100K requests/second")
 
-3. INFRASTRUCTURE AS CODE AND AUTOMATION
-Terraform, OpenTofu, AWS CloudFormation, AWS CDK, Pulumi, Ansible, Chef, Puppet, SaltStack, Packer, Vagrant, Helm, Kustomize, Crossplane, AWS Systems Manager, Azure Automation, Google Deployment Manager, Infrastructure as Code (IaC), Configuration Management, Immutable Infrastructure, Declarative Configuration, Drift Detection, State Management, Remote State, Modules, Providers, Resource Graph.
+## Key Areas to Evaluate
+### Cloud Platforms
+- AWS: EC2, S3, Lambda, EKS/ECS, RDS, VPC, IAM, CloudFront
+- Azure: VMs, Functions, AKS, Cosmos DB, AD, DevOps
+- GCP: Compute Engine, Cloud Run, GKE, Cloud Storage, BigQuery
 
-4. CONTAINERIZATION AND ORCHESTRATION
-Docker, Docker Compose, Docker Swarm, Kubernetes, Amazon ECS, Amazon EKS, Azure AKS, Google GKE, OpenShift, Rancher, Nomad, Podman, Containerd, CRI-O, Kubernetes Architecture, Pods, Services, Deployments, StatefulSets, DaemonSets, ConfigMaps, Secrets, Ingress, Persistent Volumes, Namespaces, RBAC, Custom Resource Definitions, Operators, Helm Charts, Service Mesh, Istio, Linkerd, Consul, Envoy.
+### Infrastructure & DevOps
+- Terraform, Terragrunt, CloudFormation, Pulumi, Ansible
+- Docker, Kubernetes, Helm, Istio, Linkerd
+- CI/CD: GitHub Actions, GitLab CI, Jenkins, ArgoCD
+- Monitoring: Prometheus, Grafana, Datadog, CloudWatch
 
-5. CI/CD AND VERSION CONTROL
-CI/CD Pipelines, Continuous Integration, Continuous Delivery, Continuous Deployment, Git, GitHub, GitLab, Bitbucket, GitHub Actions, GitLab CI/CD, Jenkins, CircleCI, Travis CI, Bamboo, TeamCity, ArgoCD, Flux, Spinnaker, Codefresh, Harness, Octopus Deploy, Build Automation, Test Automation, Deployment Strategies, Blue-Green Deployment, Canary Deployment, Rolling Deployment, Feature Flags, A/B Testing, Trunk-Based Development, GitFlow.
+### Reliability & Security
+- High availability and disaster recovery design
+- IAM policies, security groups, network ACLs
+- Encryption at rest and in transit
+- Compliance (SOC2, HIPAA, PCI-DSS in cloud context)
 
-6. MONITORING, LOGGING, AND OBSERVABILITY
-Prometheus, Grafana, Datadog, New Relic, Dynatrace, AppDynamics, Elasticsearch, Logstash, Kibana (ELK Stack), Loki, Tempo, Jaeger, Zipkin, OpenTelemetry, CloudWatch, Azure Monitor, Google Cloud Monitoring, Splunk, Sumo Logic, SignalFX, PagerDuty, OpsGenie, Alertmanager, SLI, SLO, SLA, Error Budgets, Observability, Distributed Tracing, Metrics Collection, Log Aggregation, Dashboards, Alerts.
-
-7. NETWORKING AND SECURITY
-Virtual Private Cloud (VPC), Subnets, Route Tables, Internet Gateway, NAT Gateway, VPN, Direct Connect, ExpressRoute, Cloud Interconnect, Load Balancers, Application Load Balancer, Network Load Balancer, CDN, DNS, Route 53, Cloud DNS, Firewall Rules, Security Groups, Network ACLs, WAF, DDoS Protection, Shield, GuardDuty, Security Hub, Azure Security Center, Cloud Armor, IAM Policies, Roles, Service Accounts, Key Management, KMS, Secrets Manager, Parameter Store, Certificate Manager, SSL/TLS, HTTPS.
-
-8. CLOUD CERTIFICATIONS
-AWS Certified Cloud Practitioner, AWS Certified Solutions Architect Associate, AWS Certified Solutions Architect Professional, AWS Certified Developer Associate, AWS Certified DevOps Engineer Professional, AWS Certified Security Specialty, AWS Certified Advanced Networking Specialty, AWS Certified Data Analytics Specialty, AWS Certified Machine Learning Specialty.
-Microsoft Certified Azure Fundamentals, Azure Administrator Associate, Azure Developer Associate, Azure Solutions Architect Expert, Azure DevOps Engineer Expert, Azure Security Engineer Associate, Azure Network Engineer Associate, Azure Data Scientist Associate, Azure AI Engineer Associate.
-Google Cloud Digital Leader, Associate Cloud Engineer, Professional Cloud Architect, Professional Data Engineer, Professional DevOps Engineer, Professional Security Engineer, Professional Network Engineer, Professional Machine Learning Engineer.
-Other: Certified Kubernetes Administrator (CKA), Certified Kubernetes Application Developer (CKAD), Terraform Associate, HashiCorp Certified Vault Associate.
-
-9. CLOUD RESUME KEYWORDS
-Cloud Migration, Lift and Shift, Replatforming, Refactoring, Re-architecting, Hybrid Cloud, Multi-Cloud, Cloud Native, Microservices, Serverless, Event-Driven Architecture, High Availability, Fault Tolerance, Disaster Recovery, Auto Scaling, Load Balancing, Caching, CDN, Database Migration, Data Backup, Data Replication, Encryption, Compliance, SOC 2, ISO 27001, HIPAA, PCI DSS, GDPR, Cost Optimization, Reserved Instances, Savings Plans, Spot Instances, Right-Sizing, Resource Tagging, Cloud Governance, Cloud Center of Excellence (CCoE), FinOps, Well-Architected Framework, AWS Well-Architected, Azure Well-Architected, Google Cloud Architecture Framework.
-
-10. COMMON CLOUD ENGINEER INTERVIEW TOPICS
-System Design, Scalability, Distributed Systems, Microservices Architecture, Database Design, Networking Fundamentals, Security Best Practices, Incident Response, Troubleshooting, Performance Optimization, Cost Optimization, Migration Strategies, Disaster Recovery Planning, Infrastructure Automation, CI/CD Pipeline Design, Containerization Strategies, Monitoring and Alerting, Configuration Management, Team Collaboration, Agile Methodologies, Technical Documentation.
+## Common Resume Mistakes
+- Listing cloud services without context of use
+- No mention of cost management or FinOps
+- Missing incident response experience on call
+- No IaC examples or tools mentioned

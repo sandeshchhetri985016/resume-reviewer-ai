@@ -202,21 +202,190 @@
 
 ---
 
+## Sprint 8 — Deterministic Rubric Scoring
+
+**Goal:** Replace LLM-dependent scoring with a transparent, weighted rubric.
+
+### Changes
+- Created `scoring.py` with 5 deterministic scoring categories:
+  - Formatting (15%) — section structure, bullet points, contact info
+  - ATS Readiness (20%) — keyword density, required sections, job titles
+  - Experience Quality (25%) — years, roles, career progression
+  - Achievement Density (20%) — quantified bullets vs total
+  - Skills Relevance (20%) — keyword match, soft/hard balance
+- Built regex patterns for measurable achievements (%, $, clients, team sizes, etc.)
+- Added resume statistics (word count, bullet count, sections detected)
+- Modified `app.py` to blend: `score = rubric × 70% + LLM × 30%`
+- Added rubric breakdown expander in the UI
+
+### Files Created
+- `scoring.py`
+
+### Files Modified
+- `app.py` — integrated rubric scoring with blended score
+
+### Outcome
+✅ Scores are now deterministic and transparent — users see weighted criteria  
+✅ Achievement density measured precisely with regex patterns  
+✅ LLM only influences 30% of final score  
+
+---
+
+## Sprint 9 — ATS Gap Analysis & Knowledge File Rewrite
+
+**Goal:** Add ATS keyword gap analysis and convert knowledge files from keyword lists to actionable recruiter guidance.
+
+### Changes
+- Added `analyze_ats_gap()` to `scoring.py` — deterministic keyword comparison
+  - Extracts unigrams + bigrams from resume and job description
+  - Classifies missing keywords as critical (repeated in JD) or nice-to-have
+  - Returns coverage percentage, matched/missing counts
+- Added ATS gap analysis UI section in `app.py`:
+  - 3 color-coded metric cards (Coverage, Matched, Missing)
+  - Tag cloud display for critical missing, other missing, and matched keywords
+  - Actionable tips with coverage targets
+- Rewrote all 16 domain knowledge files:
+  - **Before:** Comma-separated keyword lists (Python, Java, React...)
+  - **After:** Actionable recruiter guidance (metrics that impress, common mistakes, resume structure)
+  - Examples now contain context like "Managed 12-bed ward independently" instead of raw terms
+- Rebuilt RAG index: 141 chunks (down from 261, but higher quality)
+
+### Files Modified
+- `scoring.py` — added `analyze_ats_gap()` (~90 lines)
+- `app.py` — ATS gap UI, import changes
+- 16 knowledge files — complete content rewrite
+- `chroma_db/` — rebuilt index
+
+### Outcome
+✅ ATS mode now shows users exactly which keywords they're missing  
+✅ Knowledge files now provide evaluation criteria, not vocabulary  
+✅ RAG adds genuine value instead of telling the LLM what it already knows  
+
+---
+
+## Sprint 10 — Embedding-Based Domain Classification
+
+**Goal:** Replace keyword-based domain classifier with embedding similarity for more accurate domain detection.
+
+### Changes
+- Removed keyword-counting classifier (0.42-0.64 confidence, confused healthcare/aged_care)
+- Added 16 `DOMAIN_DESCRIPTIONS` — concise descriptions of what each domain looks like
+- Built `classify_domain()` method using cosine similarity against the pre-loaded embedding model
+  - Zero extra cost (model already loaded for RAG)
+  - Similarity scores: 0.77-0.90 (vs 0.45-0.64 before)
+  - 7/7 test domains classified correctly
+- Added `_domain_to_chunk_domain()` mapping to reconcile classifier names with ChromaDB metadata
+- Added `domain` field to chunk metadata during indexing
+
+### Files Modified
+- `rag_engine.py` — replaced `DOMAIN_KEYWORDS` + `classify_domain()` with embedding-based version
+- `chroma_db/` — rebuilt index with domain metadata
+
+### Outcome
+✅ Classification similarity jumped from 0.45-0.64 to 0.77-0.90  
+✅ No more "AWS → cloud engineering" when it should be software engineering  
+✅ All 16 domains now cleanly separated  
+
+---
+
+## Sprint 11 — Heading-Aware Chunking & Margin-Based Retrieval
+
+**Goal:** Fix mid-sentence fragment chunks and resolve healthcare/aged_care classifier ambiguity.
+
+### Changes
+- Replaced character-position chunker with heading-aware chunker:
+  - Detects `## ` heading boundaries to keep logical sections intact
+  - Falls back to paragraph breaks and sentence boundaries for large sections
+  - Eliminated fragments like `"view velocity (e.g.,..."` — now chunks start cleanly at `## Critical Areas to Evaluate`
+- Added margin-based domain confidence:
+  - If #1 and #2 domain similarities are within < 0.03, search both domains
+  - This fixes healthcare vs aged_care ambiguity (0.73 vs 0.72 → both searched)
+- Made rubric scoring visible by default (`expanded=True`)
+- Chunks increased from 141 to 289 (each heading becomes its own chunk)
+
+### Files Modified
+- `rag_engine.py` — replaced `_chunk_text()` with heading-aware version, added margin logic
+- `app.py` — changed rubric expander from `expanded=False` to `expanded=True`
+
+### Outcome
+✅ No more mid-sentence fragments — chunks start at clean heading boundaries  
+✅ healthcare/aged_care ambiguity resolved via margin detection (both searched when tied)  
+✅ Users now see the rubric breakdown by default — scoring transparency  
+
+---
+
+## Sprint 12 — Scoring Reform & Classifier Refinement
+
+**Goal:** Remove the arbitrary 70/30 score blend, eliminate rubric dependence on demo knowledge files, and fix classification false positives.
+
+### Changes
+- Removed the 70/30 rubric + LLM score blend (was opinionated, no data justifying it)
+  - Score now comes **100% from the deterministic rubric**
+  - LLM now generates **feedback only** (summary, strengths, weaknesses, improvements — no score)
+- Removed `normalize_score()` function (dead code after score blend removal)
+- Simplified `build_prompt()` — removed score/breakdown schema, LLM no longer asked for scores
+- Removed `domain_keywords` dependency from `score_skills_relevance()`:
+  - Was never passed by `app.py`, always fell back to "No domain keywords provided"
+  - Replaced with purely structural checks (skills section, education section, soft/hard skills balance)
+- Fixed bullet character detection:
+  - `●` (Unicode U+25CF) missing from `BULLET_PATTERN` and all 4 regex locations
+  - Added `●` and 10 other common bullet characters to all patterns
+- Fixed date range parsing:
+  - En-dash `–` and em-dash `—` not matching `DATE_RANGE_PATTERN`
+  - Added both dash variants to pattern
+- Added model fallback retry logic:
+  - OpenRouter `openrouter/free` sometimes routes to content-safety models
+  - Added `FREE_MODELS` list with 3 fallback models, tried sequentially
+  - Each response validated as JSON before accepting
+- Suppressed transformers logging noise:
+  - `logging.getLogger("transformers").setLevel(logging.ERROR)` + env vars before imports
+- Fixed domain classifier false positive (multi-sector resume → construction):
+  - Construction description had generic safety/management terms overlapping with healthcare
+  - Replaced with trade-specific vocabulary (carpenter, bricklayer, excavator, demolition)
+  - Verified: multi-sector resume now correctly → healthcare (0.691), not construction
+- Expanded ATS stop words to filter JD filler words:
+  - JD conversational phrases ("tech-savvy", "full-time", "currently employed") were splitting into junk keywords
+  - Added 8 filler words to `STOP_WORDS`: savvy, work, time, employed, full, conversion, support, currently
+  - ATS keyword extraction now produces meaningful terms instead of common English filler
+- Added ATS gap analysis console logging:
+  - `log_section("ATS GAP ANALYSIS STARTED")` + coverage/match/missing counts
+  - Makes ATS results visible in terminal for debugging
+
+### Files Modified
+- `app.py` — removed 70/30 blend, simplified prompt, added model retry loop, suppressed noise, added ATS logging
+- `scoring.py` — removed `domain_keywords` param, fixed bullet regexes, fixed date regex, expanded stop words, added ATS logging call
+- `rag_engine.py` — updated construction domain description
+
+### Outcome
+✅ Score is fully deterministic — reproducible, defensible, no AI influence  
+✅ LLM provides feedback only — if it fails, the score still works  
+✅ Bullets with `●` now detected correctly  
+✅ Date ranges with en-dash/em-dash now parse  
+✅ OpenRouter content-safety routing handled gracefully  
+✅ Transformers noise suppressed  
+✅ Multi-sector resumes no longer falsely classified as construction  
+✅ ATS keywords filtered better — fewer filler words in missing/matched lists  
+✅ ATS analysis logged to console for debugging
+
+---
+
 ## Current Project Metrics
 
 | Metric | Value |
 |--------|-------|
-| Total sprints | 7 |
+| Total sprints | 12 |
 | Knowledge files | 18 |
-| Total chunks | 261 |
-| Total knowledge size | ~107 KB |
+| Total chunks | 289 |
 | Embedding model | BAAI/bge-small-en-v1.5 |
+| Domain classifier | Embedding-based (16 descriptions, 0.69-0.90 similarity) |
+| Chunking | Heading-aware (## boundaries) |
 | Vector DB | ChromaDB (local) |
-| Best retrieval distance | 0.45 (data science) |
-| LLM provider | OpenRouter (free tier) |
+| LLM provider | OpenRouter (free tier, with model fallback) |
 | UI framework | Streamlit |
 | Visualization | Plotly (gauge + radar) |
 | PDF generation | ReportLab |
+| Scoring | Deterministic weighted rubric (100%) — no AI involvement |
+| ATS analysis | Deterministic keyword gap with coverage % |
 
 ---
 
@@ -224,8 +393,10 @@
 
 | Sprint | Description | Priority |
 |--------|-------------|----------|
-| 8 | Add reranking with cross-encoder for improved retrieval quality | High |
-| 9 | Add query routing — detect query domain and filter ChromaDB results | Medium |
-| 10 | Add hybrid search (BM25 + embeddings) for better non-domain queries | Medium |
-| 11 | Expand knowledge base to 30+ career files | Low |
-| 12 | Add authentication and user history | Low |
+| 13 | Add reranking with cross-encoder for improved retrieval quality | High |
+| 14 | Add hybrid search (BM25 + embeddings) for better non-domain queries | Medium |
+| 15 | Add resume rewrite suggestions (before/after examples) | Medium |
+| 16 | Improve ATS coverage with per-category scoring (Tech Tools Certs) | Medium |
+| 17 | Test against 20+ real-world messy resumes (operations co-ordinator, hybrid roles) | High |
+| 18 | Expand knowledge base to 30+ career files | Low |
+| 19 | Add authentication and user history | Low |

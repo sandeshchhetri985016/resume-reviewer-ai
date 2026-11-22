@@ -1,22 +1,61 @@
-Electrician Career Keywords for Resume Optimization
+# Electrician Resume Evaluation Guidance
+# Use this to evaluate and provide feedback on electrician resumes.
 
-1. ELECTRICIAN ROLES AND TITLES
-Electrician, Licensed Electrician, Master Electrician, Apprentice Electrician, Electrical Contractor, Electrical Installer, Maintenance Electrician, Industrial Electrician, Commercial Electrician, Residential Electrician, Electrical Technician, Electrical Engineer, Electrical Supervisor, Electrical Inspector, Electrical Fitter, Electrical Tradesperson, Fire Electrician, Security Electrician, Data Cabling Technician, Solar Panel Installer, Renewable Energy Electrician, Automotive Electrician, Marine Electrician, Aviation Electrician, Mining Electrician.
+## Key Resume Strengths to Look For
+- Licenses and tickets with expiry dates (Electrical License, A Grade, White Card)
+- Project scope (e.g., "Wired 200+ apartment complex from slab to fit-off")
+- Safety record (e.g., "Zero safety incidents over 5 years on commercial sites")
+- Supervision and apprentice mentoring (e.g., "Supervised 3 apprentices across multiple sites")
+- Specialisation areas (domestic, commercial, industrial, solar, data)
+- Testing and inspection experience with outcomes
 
-2. CORE SKILLS AND COMPETENCIES
-Electrical Wiring, Cable Installation, Conduit Work, Switchboard Installation, Circuit Breaker Installation, Distribution Boards, Lighting Installation, Power Points, Switch Installation, Electrical Repairs, Fault Finding, Electrical Testing, Electrical Safety, Lockout Tagout (LOTO), Risk Assessment, Safe Work Method Statements (SWMS), Reading Electrical Drawings, Schematic Diagrams, Wiring Diagrams, Circuit Diagrams, Electrical Schematics, Cable Scheduling, Load Calculations, Voltage Drop Calculations, Electrical Compliance, Australian Standards (AS/NZS 3000), Wiring Rules, Electrical Regulations.
+## Metrics That Impress Electrical Contractors
+- Number of projects completed (with scope details)
+- Team leadership — apprentices or trades assistants supervised
+- Job completion rates on time and on budget
+- Safety incident record
+- Client retention or repeat business
+- Switchboard or complex installation counts
 
-3. TYPES OF ELECTRICAL WORK
-Residential Wiring, New Home Wiring, Renovations, Rewiring, Commercial Electrical, Office Fit-Outs, Retail Electrical, Industrial Electrical, Factory Wiring, Plant Maintenance, Mine Site Electrical, Underground Mining, Surface Mining, Hazardous Areas, Explosion-Proof Equipment, High Voltage Switching, Substation Maintenance, Switchgear, Transformers, Generators, Motors, Variable Speed Drives, PLC Wiring, SCADA Systems, Building Management Systems, Fire Alarm Systems, Security Systems, CCTV, Access Control, Data Cabling, Structured Cabling, Fibre Optics, Ethernet, Cat5e, Cat6, Cat6a, Solar PV Systems, Battery Storage, Inverters, EV Charger Installation, Smart Home Systems, Home Automation, Lighting Control, Emergency Lighting, Exit Signs.
+## Key Areas to Evaluate
+### Licenses & Tickets
+- Electrical License (A Grade, B Grade)
+- Electrical Fitter License (if applicable)
+- White Card / Construction Induction
+- High Risk Work License (EWP, forklift)
+- Solar Accreditation (Clean Energy Council)
+- Fire Panel, Data Cabling, Security System endorsements
+- First Aid, CPR, Working at Heights, Confined Space
+- Test and Tag qualification
 
-4. TOOLS AND TEST EQUIPMENT
-Multimeter, Clamp Meter, Voltage Tester, Megger (Insulation Resistance Tester), Earth Tester, RCD Tester, Phase Rotation Tester, Power Quality Analyser, Thermal Imaging Camera, Circuit Tester, Continuity Tester, Oscilloscope, Cable Tracer, Wire Strippers, Pliers, Side Cutters, Screwdrivers, Socket Set, Spanners, Crimping Tool, Cable Cutters, Conduit Bender, Cable Roller, Fish Tape, Draw Wire, Hammer Drill, Impact Driver, Angle Grinder, Saw, Ladder, EWP, Scissor Lift, PPE, Insulated Gloves, Hard Hat, Safety Glasses, Safety Harness.
+### Experience Types
+- Domestic: new builds, renovations, fault finding, switchboard upgrades
+- Commercial: fit-outs, data cabling, lighting control, fire systems
+- Industrial: motor control, PLC, HV switching, instrumentation
+- Solar/PV: grid-connected, battery storage, design and installation
+- Maintenance: breakdown response, preventative maintenance
 
-5. CERTIFICATIONS AND LICENSES
-Electrical License, Electrician's License (A Grade), Electrician's License (B Grade), Electrical Contractor License, Electrical Supervisor Certificate, Certificate III in Electrotechnology, Certificate IV in Electrical Systems, Diploma of Electrical Engineering, Restricted Electrical License, Apprentice Registration, White Card (Construction Induction), Working at Heights, Confined Space, High Voltage Switching, Low Voltage Rescue, CPR, First Aid, Fire Alarm Certificate, Security Installer License, Cabling License, Solar Accreditation, EV Charger Installer, DCSI (Defence Clearance), Police Clearance, Driver's License.
+### Technical Skills
+- Switchboard building and installation
+- Cable tray and conduit installation
+- Earth fault loop impedance testing
+- RCD testing and tagging
+- Metering installation (smart meters)
+- Electrical testing and commissioning
 
-6. RESUME KEYWORDS FOR ELECTRICIANS
-Electrical Installation, Electrical Maintenance, Electrical Repairs, Fault Diagnosis, Problem Solving, Safety Compliance, WHS, Team Player, Independent Worker, Attention to Detail, Customer Service, Communication, Time Management, Project Completion, Quality Workmanship, Reliability, Punctuality, Physical Fitness, Manual Handling, Technical Knowledge, Continuous Learning, Apprenticeship, Trade Qualification, CEC Accreditation, Solar Installer, SAA Accreditation.
+## Common Resume Mistakes for Electricians
+- License number or expiry date missing
+- No project examples with scope or value
+- Safety record not mentioned
+- Team supervision experience omitted
+- Training or apprentice mentoring not highlighted
+- Tools and testing equipment not listed
+- Vague descriptions like "general electrical work"
 
-7. COMMON ELECTRICIAN INTERVIEW TOPICS
-AS/NZS 3000 Knowledge, Testing Procedures, Fault Scenarios, Safety Practices, Experience, Tools Proficiency, Teamwork, Customer Interaction, Problem Solving, Career Goals, Continuous Learning, Trade Updates.
+## Resume Structure Recommendations
+1. Professional Summary (years experience, sectors, key strengths)
+2. Licenses & Tickets (with numbers and expiry dates — critical)
+3. Professional Experience (project type, scope, responsibilities, outcomes)
+4. Key Projects (notable installations or complex work)
+5. Education (trade qualification, apprenticeship completion)
+6. Additional: Safety awards, special training, referee availability

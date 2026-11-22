@@ -1,33 +1,56 @@
-Mobile Development Career Keywords for Resume Optimization
+# Mobile Development Resume Evaluation Guidance
+# Use this to evaluate and provide feedback on mobile development resumes.
 
-1. MOBILE DEVELOPMENT ROLES AND TITLES
-Mobile Developer, iOS Developer, Android Developer, React Native Developer, Flutter Developer, Mobile App Developer, Cross-Platform Developer, Mobile Engineer, Senior Mobile Engineer, Mobile Lead, Mobile Architect, Mobile Tech Lead, iOS Engineer, Android Engineer, Mobile Software Engineer, Mobile DevOps Engineer, Mobile QA Engineer, Mobile Test Engineer, Mobile UI Developer, Mobile Frontend Developer, Mobile Backend Developer, Mobile Full Stack Developer, Mobile Game Developer, AR/VR Developer, Mobile Solutions Architect, Mobile Product Manager.
+## Key Resume Strengths to Look For
+- Published apps on App Store/Google Play with download and rating stats
+- Cross-platform vs native experience (React Native, Flutter, Swift, Kotlin)
+- Performance optimization metrics (e.g., "Reduced app launch time by 60%", "Cut crash rate from 2% to 0.1%")
+- CI/CD for mobile (Bitrise, Fastlane, TestFlight, Play Console)
+- Architecture patterns (MVVM, Clean Architecture, BLoC, Redux)
+- API integration and offline-first architecture experience
 
-2. PLATFORMS AND LANGUAGES
-iOS: Swift, Objective-C, SwiftUI, UIKit, Core Data, Core Animation, Core Location, Core Bluetooth, HealthKit, ARKit, Metal, Combine, Swift Package Manager, CocoaPods, Carthage, Xcode, Interface Builder, Instruments, TestFlight, App Store Connect.
-Android: Kotlin, Java, Android SDK, Jetpack Compose, XML Layouts, Android Architecture Components, Room, Navigation Component, WorkManager, Hilt, Dagger, Retrofit, OkHttp, Glide, Coil, Firebase SDK, Google Play Services, Android Studio, Gradle, ProGuard, Google Play Console.
-Cross-Platform: React Native, Flutter, Dart, Xamarin, .NET MAUI, Ionic, Capacitor, Cordova, PhoneGap, NativeScript, Kotlin Multiplatform Mobile (KMM), Unity, Unreal Engine.
+## Metrics That Impress Mobile Leads
+- App store ratings and user review improvements
+- Crash-free session rates (e.g., "Maintained 99.8% crash-free rate")
+- App size reductions and load time improvements
+- Feature adoption and user engagement metrics
+- Build and deployment frequency improvements
+- Test coverage and automation percentages
 
-3. FRAMEWORKS AND LIBRARIES
-React Native: React, JavaScript, TypeScript, Redux, MobX, Zustand, React Navigation, React Native CLI, Expo, Reanimated, Gesture Handler, AsyncStorage, Push Notifications, Firebase, Sentry.
-Flutter: Flutter SDK, Dart, Material Design, Cupertino Widgets, Provider, Riverpod, Bloc, GetX, Firebase, Hive, SharedPreferences, Dio, http, flutter_local_notifications, in_app_purchase, google_maps_flutter, camera, image_picker.
-iOS: SwiftUI, UIKit, Core Data, CloudKit, MapKit, StoreKit, PushKit, CallKit, SiriKit, WidgetKit, Core Motion, AVFoundation, Vision, Natural Language.
-Android: Jetpack Compose, Material3, Android Architecture Components, Hilt, Room, Navigation, Paging, WorkManager, DataStore, Firebase, ML Kit, CameraX, ExoPlayer, Media3.
+## Key Areas to Evaluate
+### Platform Skills
+- iOS: Swift, SwiftUI, UIKit, Core Data, Combine
+- Android: Kotlin, Jetpack Compose, Android Architecture Components
+- Cross-platform: Flutter (Dart), React Native (JavaScript/TypeScript)
+- Testing: XCTest, Espresso, Detox, Appium
 
-4. DEVELOPMENT TOOLS AND INFRASTRUCTURE
-Xcode, Android Studio, Visual Studio Code, IntelliJ IDEA, AppCode, Git, GitHub, GitLab, Bitbucket, Fastlane, Jenkins, CircleCI, GitHub Actions, Bitrise, Codemagic, SonarQube, Firebase Crashlytics, Firebase Analytics, Firebase Performance, Sentry, App Center, TestFlight, Google Play Console Internal Testing, Alpha, Beta, Production Tracks, HockeyApp, Diawi, Expo Go.
+### Mobile-Specific Concerns
+- Push notifications (APNs, FCM)
+- Offline storage and sync strategies
+- Deep linking and universal links
+- Biometric authentication (FaceID, fingerprint)
+- Background processing and battery optimization
+- App store submission and review process
 
-5. APP STORE AND DEPLOYMENT
-App Store Submission, App Store Review Guidelines, Google Play Store Policies, App Store Optimization (ASO), App Metadata, Keywords, Description, Screenshots, App Preview Video, Ratings, Reviews, In-App Purchases, Subscriptions, Free vs Paid, Freemium, Ad-Supported, App Monetization, RevenueCat, AdMob, Unity Ads, Facebook Audience Network. CI/CD, Code Signing, Provisioning Profiles, Certificates, Entitlements, App Thinning, Bitcode, App Bundle, APK, AAB, IPA, dSYM, ObjC-Symbols, ProGuard Rules.
+### Architecture & Engineering
+- State management (Redux, Provider, Bloc, Riverpod)
+- Dependency injection (Dagger, Hilt, Koin, Swinject)
+- Networking layer (Retrofit, Alamofire, URLSession)
+- Local storage (Core Data, Room, SQLite, SharedPreferences)
 
-6. TESTING AND QUALITY ASSURANCE
-Unit Testing, UI Testing, Integration Testing, Widget Testing, Snapshot Testing, Golden Testing, XCTest, XCTUITest, JUnit, Espresso, UI Automator, Detox, Appium, Firebase Test Lab, Device Farm, Manual Testing, Regression Testing, Exploratory Testing, Performance Testing, Load Testing, Stress Testing, Accessibility Testing, Localization Testing, Beta Testing.
+## Common Resume Mistakes in Mobile Development
+- No links to published apps or GitHub
+- Missing platform-specific knowledge (iOS HIG, Material Design)
+- No mention of app store submission experience
+- Performance or crash metrics absent
+- Only lists frameworks without architecture understanding
+- No mention of testing strategy for mobile-specific scenarios
 
-7. CERTIFICATIONS AND LEARNING
-Apple Certified iOS Developer, Google Associate Android Developer, Meta React Native Certification, Udacity iOS Nanodegree, Udacity Android Nanodegree, Coursera Mobile Development Specializations, Bachelor of Computer Science, Bachelor of Software Engineering.
-
-8. MOBILE DEVELOPMENT RESUME KEYWORDS
-Mobile App Development, Cross-Platform Development, API Integration, RESTful APIs, GraphQL, Offline Storage, Local Database, Push Notifications, Deep Linking, Universal Links, App Clips, Widgets, Background Tasks, Background Fetch, Location Services, Camera Integration, Biometric Authentication, Face ID, Touch ID, Security, Data Encryption, Keychain, Keystore, Performance Optimization, Memory Management, Battery Optimization, App Size Optimization, Threading, Concurrency, GCD, Operation Queues, Async/Await, Coroutines, State Management, Agile Development, Scrum, Code Review, Technical Documentation, Mentoring.
-
-9. COMMON MOBILE DEVELOPER INTERVIEW TOPICS
-iOS/Android Architecture, Swift/Kotlin Language Features, UIKit/SwiftUI Differences, Jetpack Compose vs XML, State Management, Memory Leaks, Multithreading, Networking, Data Persistence, App Lifecycle, Performance Optimization, Security Best Practices, App Store Submission Process, Design Patterns, MVVM, MVC, Clean Architecture, SOLID Principles, Dependency Injection, Unit Testing.
+## Resume Structure Recommendations
+1. Technical Summary (platforms, key apps, years experience)
+2. Technical Skills (Languages, Frameworks, Tools, Platforms)
+3. Professional Experience (apps built, metrics, team collaboration)
+4. Published Apps (links, download stats, ratings)
+5. Open Source / Side Projects (GitHub links)
+6. Education (degree, relevant coursework)
+7. Additional: Conference talks, blog posts, community contributions

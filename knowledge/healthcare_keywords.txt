@@ -1,40 +1,59 @@
-Comprehensive Healthcare & Disability Support Keywords for Resume Optimization
+# Healthcare Resume Evaluation Guidance
+# Use this to evaluate and provide feedback on healthcare resumes.
 
-1. DIRECT CARE & PERSONAL SUPPORT
-Personal Care, Activities of Daily Living (ADL), Bathing Assistance, Grooming, Dressing Assistance, Toileting Assistance, Feeding Assistance, Mobility Support, Transfers, Hoist Operation, Stand-by Assistance, Passive Lifting, Sliding Sheet Techniques, Pressure Area Care, Skin Integrity Monitoring, Catheter Care, Stoma Care, Palliative Care, End of Life Support, Respite Care, In-home Care, Community Access, Social Support, Companionship, Emotional Support, Active Listening, Person-Centered Care, Individual Support Plans, Client Advocacy, Self-Help Skills Training.
+## Key Resume Strengths to Look For
+- Patient ratios and caseload numbers (e.g., "Managed 15+ clients daily")
+- Compliance rates (e.g., "100% compliance with Aged Care Quality Standards")
+- Incident reduction metrics (e.g., "Reduced falls by 35% through improved mobility programs")
+- Certification currency (First Aid, CPR, Manual Handling, NDIS screening)
+- Person-centred care language and client advocacy examples
 
-2. AGED CARE SPECIFIC
-Aged Care, Residential Aged Care, Nursing Home, Dementia Care, Alzheimer's Support, Memory Support Unit, Sundowning Management, Validation Therapy, Reality Orientation, Palliative Aged Care, Restorative Care, Falls Prevention, Mobility Programs, Mealtime Management, Texture Modified Foods, Thickened Fluids, Dysphagia Support, Continence Management, Bowel Care, Catheter Care, Wound Care, Pressure Injury Prevention, Skin Tears, Aged Care Standards, Aged Care Quality Standards, Aged Care Act, Approved Provider, Home Care Packages, HCP Level 1-4, CHSP (Commonwealth Home Support Programme), ACAT Assessment, Aged Care Funding Instrument (ACFI), AN-ACC, Resident Classification.
+## Metrics That Impress Healthcare Recruiters
+- Patient-to-staff ratios managed
+- Number of care plans developed or reviewed
+- Incident reduction percentages
+- Compliance audit scores (e.g., "98% compliance in unannounced audit")
+- Client satisfaction scores or improvements
+- Team supervision numbers (e.g., "Supervised team of 8 support workers")
+- Training delivered (e.g., "Trained 20 staff on manual handling protocols")
 
-3. DISABILITY SUPPORT SPECIFIC
-Disability Support, NDIS (National Disability Insurance Scheme), NDIS Practice Standards, NDIS Code of Conduct, NDIS Worker Screening, NDIS Quality and Safeguards Commission, Supported Independent Living (SIL), Short Term Accommodation (STA/Respite), Medium Term Accommodation (MTA), Specialist Disability Accommodation (SDA), Individualised Living Options (ILO), Plan Management, Self-Management, Supported Employment, Australian Disability Enterprise (ADE), Behaviour Support, Positive Behaviour Support (PBS), Restrictive Practices, Behaviour Support Plans, Functional Behaviour Assessment, Sensory Processing, Autism Spectrum Disorder (ASD), ADHD, Intellectual Disability, Physical Disability, Psychosocial Disability, Vision Impairment, Hearing Impairment, Communication Aids, AAC (Augmentative and Alternative Communication), Key Word Sign, Makaton, Braille, Guide Dogs, Wheelchair Accessible, Hoist Transfer, Ceiling Hoist, Standing Hoist, Sliding Board Transfer, Transfer Belt.
+## Critical Keywords to Check for
+### Aged Care
+- ACAT assessment, ACFI, AN-ACC, Home Care Packages, CHSP
+- Dementia care, palliative care, falls prevention
+- Mealtime management, dysphagia, texture-modified foods
 
-4. MENTAL HEALTH & COMPLEX CARE
-Mental Health Support, Psychosocial Disability, Depression, Anxiety, Bipolar Disorder, Schizophrenia, Personality Disorders, Trauma-Informed Care, Recovery-Oriented Practice, Psychological First Aid, De-escalation Techniques, Crisis Management, Suicide Prevention, Self-Harm Management, Behaviour of Concern, Challenging Behaviour, Aggression Management, Sensory Modulation, Mindfulness, CBT Techniques, DBT Informed, Mental Health First Aid, Complex Care, Tracheostomy Care, Ventilator Support, PEG Feeding, Enteral Nutrition, Subcutaneous Injections, Insulin Administration, Epilepsy Management, Midazolam Administration, Seizure First Aid.
+### Disability Support
+- NDIS, SIL, STA, SDA, ILO, Positive Behaviour Support
+- Person-centred approach, independence promotion
+- Community access, social support, daily living skills
 
-5. MEDICATION MANAGEMENT
-Medication Administration, Medication Assistance, Medication Prompting, Dose Administration Aid (DAA), Webster-pak, Blister Pack, Scheduled Medications, PRN Medications, Controlled Drugs, Medication Record, MAR Chart, Medication Audit, Medication Error Reporting, Double-check System, Endorsed Enrolled Nurse, Registered Nurse Delegation, Medication Competency Assessment, Self-Medication Training, Inhaler Technique, Insulin Administration, GCSF (Glucagon), Emergency Medications, Oxygen Therapy, Nebuliser, Pain Management, Analgesia, PRN Protocol.
+### Clinical Skills
+- Medication administration, wound care, catheter care
+- Vital signs, BGL monitoring, pain assessment
+- Manual handling, hoist operation, transfers
 
-6. CLINICAL & NURSING SKILLS
-Clinical Care, Nursing Support, Vital Signs Monitoring, Blood Pressure, Pulse, Temperature, Respiration, O2 Saturation, BGL (Blood Glucose Level), Pain Assessment, Fluid Balance Chart, Intake Output Chart, Wound Management, Wound Dressing, Aseptic Technique, Sterile Dressing, Suture Removal, Staples Removal, Catheter Insertion, Catheter Care, Stoma Care, Colostomy, Ileostomy, Urostomy, PEG Care, Nasogastric Tube, IV Fluids Monitoring, Cannula Care, Blood Collection, Pathology Collection, ECG Monitoring, Telemetry, Oxygen Saturation Monitoring, Continuous Positive Airway Pressure (CPAP), BiPAP, Suctioning, Tracheostomy Care.
+## Common Resume Mistakes in Healthcare
+- Listing duties without context (e.g., "Provided personal care" → should specify scope and impact)
+- Missing certification details including expiry dates
+- No indication of regulatory knowledge (Aged Care Act, NDIS Code of Conduct)
+- Failing to mention challenging behaviours or complex care experience
+- Omitting supervision or team leadership experience
+- Using passive language instead of action verbs
 
-7. INFECTION CONTROL & SAFETY
-Infection Control, Hand Hygiene, Standard Precautions, Transmission-Based Precautions, Contact Precautions, Droplet Precautions, Airborne Precautions, PPE (Personal Protective Equipment), Gloves, Gowns, Masks, Eye Protection, N95 Mask Fit Testing, Sterilisation, Disinfection, Cleaning Protocols, Environmental Cleaning, Outbreak Management, Influenza Outbreak, Gastroenteritis Outbreak, COVID-19 Protocols, Isolation Procedures, Cohort Nursing, Aseptic Non-Touch Technique (ANTT), Waste Management, Clinical Waste, Sharps Disposal, Spill Management, Blood Spill, Bodily Fluid Spill.
+## Certifications & Licenses
+Check for these mandatory credentials per role:
+- Personal Care Worker: Certificate III in Individual Support, First Aid, CPR
+- Disability Support: NDIS Worker Screening, Manual Handling, Medication cert
+- Enrolled Nurse: AHPRA registration, Medication Endorsement
+- Registered Nurse: AHPRA registration, relevant postgraduate qualifications
+- All roles: Working with Children Check, Police Check, COVID-19 training
 
-8. MANUAL HANDLING & MOBILITY
-Manual Handling, Safe Lifting, No-Lift Policy, Mechanical Lifting, Hoist Operation, Ceiling Hoist, Mobile Hoist, Stand Aid, Slide Sheet, Transfer Board, Rotunda, Shower Chair, Commode, Wheelchair Transfers, Bed Mobility, Positioning, Repositioning, Pressure Relief, 2-Hour Turns, Side Lying, Supine Positioning, Prone Positioning, Seated Postural Support, Postural Management, 24-Hour Postural Care, Falls Risk Assessment, Falls Prevention Strategies, Bed Alarms, Floor Mats, Hip Protectors, Mobility Aids, Walking Frame, Walking Stick, Crutches, Zimmer Frame, Rollator, Gait Belt, Transfer Belt.
-
-9. DOCUMENTATION & COMPLIANCE
-Documentation, Progress Notes, Care Plan Documentation, Daily Care Records, Incident Reporting, Critical Incident Reporting, Reportable Incidents, Serious Incident Reporting, Open Disclosure, Clinical Handover, ISBAR (Identify, Situation, Background, Assessment, Recommendation), Care Coordination, Case Notes, Client Files, Privacy and Confidentiality, Health Records, My Health Record, Electronic Medical Record (EMR), Electronic Health Record (EHR), Data Entry, Data Accuracy, Audit, Quality Assurance, Continuous Improvement, Compliance, Regulatory Compliance, Accreditation, Standards Compliance, Policy Implementation, Procedure Adherence.
-
-10. SPECIALISED CONDITIONS & CARE
-Dementia Care, Alzheimer's Disease, Vascular Dementia, Lewy Body Dementia, Frontotemporal Dementia, Parkinson's Disease, Multiple Sclerosis (MS), Motor Neurone Disease (MND), Huntington's Disease, Cerebral Palsy, Spina Bifida, Acquired Brain Injury (ABI), Stroke Recovery, Spinal Cord Injury, Amputation, Arthritis, Osteoporosis, Diabetes Management, Type 1 Diabetes, Type 2 Diabetes, Diabetes Insipidus, Cardiovascular Disease, COPD (Chronic Obstructive Pulmonary Disease), Asthma, Emphysema, Chronic Kidney Disease, End Stage Renal Disease, Dialysis, Peritoneal Dialysis, Haemodialysis, Cancer Care, Oncology Support, Chemotherapy, Radiotherapy, Palliative Symptoms Management, Pain Management, Nausea Management, Breathlessness Management, Lymphoedema Care.
-
-11. EMERGENCY & ACUTE CARE
-Emergency Response, First Aid, CPR, Basic Life Support (BLS), Advanced Life Support (ALS), DRSABCD (Danger, Response, Send for help, Airway, Breathing, CPR, Defibrillation), Recovery Position, Airway Management, Oxygen Administration, Defibrillation, AED (Automated External Defibrillator), Emergency Medication, Anaphylaxis Management, EpiPen Administration, Asthma Emergency, Seizure Management, Status Epilepticus, Choking Management, Haemorrhage Control, Shock Management, Spinal Precautions, Medical Emergency Team (MET) Call, Code Blue, Code Red, Code Black.
-
-12. COMMUNICATION & TEAM COORDINATION
-Interdisciplinary Team, Multidisciplinary Team (MDT), Care Team, Allied Health, Physiotherapy, Occupational Therapy, Speech Therapy, Dietetics, Social Work, Psychology, Podiatry, Nursing Staff, Medical Officers, General Practitioner, Geriatrician, Psychiatrist, Case Manager, Care Coordinator, Service Coordinator, Team Leader, Shift Coordination, Handover, Clinical Handover, Team Meeting, Care Conference, Family Meeting, Client Advocacy, Family Communication, Conflict Resolution, Mediation, Negotiation, Cultural Competence, Aboriginal Health, Torres Strait Islander Health, CALD (Culturally and Linguistically Diverse), LGBTIQ+ Awareness, Trauma-Informed Communication.
-
-13. TRAINING & QUALITY IMPROVEMENT
-Staff Training, Induction Training, Clinical Education, Competency Assessment, In-service Education, Workshop Facilitation, Mentoring, Preceptoring, Clinical Supervision, Student Supervision, Audit, Quality Improvement, Continuous Improvement, Clinical Audit, Peer Review, Evidence-Based Practice, Research Implementation, Policy Development, Procedure Writing, Clinical Guidelines, Best Practice, Benchmarking, Key Performance Indicators (KPIs), Outcome Measurement, Client Satisfaction Surveys, Feedback, Complaints Management, Incident Investigation, Root Cause Analysis (RCA).
+## Resume Structure Recommendations
+Healthcare resumes should include:
+1. Professional Summary (2-4 sentences with years experience and specialisation)
+2. Core Competencies (bullet list of 8-12 clinical and personal care skills)
+3. Professional Experience (reverse chronological with quantified achievements)
+4. Education (qualifications with institution and completion dates)
+5. Certifications & Licenses (name, issuer, expiry — critical for this field)
+6. Additional: Languages, Volunteer Work if applicable

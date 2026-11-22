@@ -1,25 +1,55 @@
-Human Resources Career Keywords for Resume Optimization
+# Human Resources Resume Evaluation Guidance
+# Use this to evaluate and provide feedback on HR resumes.
 
-1. HR ROLES AND TITLES
-HR Assistant, HR Coordinator, HR Officer, HR Advisor, HR Business Partner, HR Manager, HR Director, VP of Human Resources, Chief Human Resources Officer (CHRO), Recruitment Coordinator, Recruitment Consultant, Talent Acquisition Specialist, Talent Acquisition Manager, Sourcing Specialist, Headhunter, Onboarding Specialist, Training Coordinator, Training Manager, Learning and Development Officer, L&D Manager, Organisational Development Specialist, Performance Manager, Employee Relations Specialist, Industrial Relations Officer, Remuneration Specialist, Compensation and Benefits Analyst, HRIS Analyst, HR Data Analyst, Payroll Officer, Payroll Manager, Workplace Health and Safety Officer, WHS Manager, Diversity and Inclusion Officer, HR Consultant.
+## Key Resume Strengths to Look For
+- Hiring metrics (e.g., "Filled 50+ positions annually with average time-to-hire of 18 days")
+- Employee retention and engagement data (e.g., "Reduced turnover from 25% to 15% over 2 years")
+- HRIS/platform proficiency (Workday, SuccessFactors, ADP, BambooHR, Employment Hero)
+- Policy development and implementation examples
+- IR/ER case management experience with outcomes
+- Training and development program results
 
-2. RECRUITMENT AND TALENT ACQUISITION
-Full-Cycle Recruitment, Sourcing, Screening, Shortlisting, Interviewing, Assessment, Reference Checking, Offer Management, Onboarding, Induction, Employer Branding, Candidate Experience, Applicant Tracking Systems (ATS), Job Advertising, Social Media Recruitment, LinkedIn Recruiter, Seek, Indeed, Boolean Search, Headhunting, Executive Search, Graduate Recruitment, Volume Recruitment, Agency Recruitment, In-House Recruitment, Recruitment Metrics, Time to Hire, Cost per Hire, Quality of Hire, Offer Acceptance Rate.
+## Metrics That Impress HR Leaders
+- Time-to-hire and cost-per-hire reductions
+- Retention rate improvements
+- Employee engagement score improvements
+- Training completion rates and effectiveness
+- Compliance audit results
+- Number of recruitment campaigns managed
 
-3. EMPLOYEE RELATIONS AND INDUSTRIAL RELATIONS
-Employee Relations, Industrial Relations, Enterprise Agreements, Awards, Modern Awards (Australian), Fair Work Act, National Employment Standards, Employment Contracts, Termination, Redundancy, Restructuring, Performance Management, Disciplinary Procedures, Grievance Handling, Mediation, Conflict Resolution, Bullying and Harassment, Workplace Investigations, Show Cause, Unfair Dismissal, General Protections, Adverse Action, Fair Work Commission, Fair Work Ombudsman, Union Relations, Collective Bargaining, Enterprise Bargaining Agreements (EBA), Work Councils.
+## Key Areas to Evaluate
+### Recruitment & Talent Acquisition
+- Sourcing strategy and channel effectiveness
+- Interview process design and improvement
+- Employer branding initiatives
+- Onboarding program design and feedback
+- Diversity and inclusion hiring metrics
 
-4. LEARNING AND DEVELOPMENT
-Training Needs Analysis, Training Design, Training Delivery, Facilitation, E-Learning, LMS (Learning Management System), Induction Training, Compliance Training, Leadership Development, Management Training, Soft Skills Training, Technical Training, Apprenticeships, Traineeships, Mentoring, Coaching, Career Development, Succession Planning, Talent Management, High Potential Programs, Performance Reviews, 360-Degree Feedback, KPIs, Goal Setting, Professional Development, Training ROI, Kirkpatrick Evaluation Model.
+### Employee Relations & Compliance
+- Award interpretation and Fair Work compliance
+- Performance management case handling
+- Investigation and grievance resolution
+- Policy writing and implementation
+- WHS/OHS knowledge and incident management
 
-5. HR SYSTEMS AND ANALYTICS
-HRIS (Human Resources Information System), SAP SuccessFactors, Oracle HCM, Workday, ADP, PayGlobal, KeyPay, Deputy, Employment Hero, Flare, Xero Payroll, MYOB Payroll, Excel, Power BI, Tableau, HR Analytics, Workforce Planning, Headcount Reporting, Turnover Analysis, Attrition Rate, Retention Rate, Absenteeism, Productivity Metrics, Employee Engagement Surveys, Pulse Surveys, Net Promoter Score, Data Management, Data Integrity, HR Dashboards, Reporting, Compliance Reporting.
+### HR Operations
+- HRIS implementation or migration
+- Payroll processing and accuracy
+- Reporting and workforce analytics
+- Budget management for HR initiatives
 
-6. CERTIFICATIONS AND QUALIFICATIONS
-Certificate IV in Human Resources, Diploma of Human Resources, Advanced Diploma of Human Resources, Bachelor of Business (HR), Master of Human Resources, Master of Management (HR), Graduate Diploma of HR, Graduate Certificate of HR, CPHR (Certified Professional in Human Resources), AHRI (Australian Human Resources Institute), SHRM-CP (Society for Human Resource Management), SHRM-SCP, CIPD (Chartered Institute of Personnel and Development), Cert IV in Training and Assessment, Diploma of Training Design and Development, Certificate IV in Work Health and Safety, Diploma of WHS, Diploma of Leadership and Management.
+## Common Resume Mistakes in HR
+- People metrics without context or comparison
+- No mention of HRIS or platform experience
+- Vague about policy contributions or authorship
+- Missing IR/ER case examples or outcomes
+- Compliance knowledge implied but not demonstrated
+- No evidence of stakeholder or leadership communication
 
-7. HR RESUME KEYWORDS
-Employee Lifecycle, HR Operations, Policy Development, Policy Implementation, Compliance, Employment Law, Fair Work, Award Interpretation, Workplace Investigations, Performance Reviews, Talent Management, Succession Planning, Culture Change, Employee Engagement, Workplace Culture, Diversity and Inclusion, WHS, Return to Work, Workers Compensation, Payroll, Remuneration, Benchmarking, Benefits Administration, Salary Packaging, Bonus Schemes, Incentive Programs, Recognition Programs, Employee Relations, Union Negotiations, Change Management, Organisational Development, HR Strategy, Strategic Partnering, Consultative Approach, Stakeholder Management, Business Acumen, Communication, Interpersonal Skills, Negotiation, Problem Solving, Decision Making, Confidentiality, Integrity.
-
-8. COMMON HR INTERVIEW TOPICS
-Employment Law Knowledge, Award Interpretation, Scenario Questions, Conflict Resolution, Performance Management, Change Management Experience, Stakeholder Management, HR Metrics, ATS Experience, Recruitment Strategy, Employee Engagement Initiatives, WHS Knowledge, Career Motivation, Business Partnering Model, HR Trends.
+## Resume Structure Recommendations
+1. Professional Summary (years experience, HR areas, industry)
+2. Technical Skills (HRIS, Platforms, Tools)
+3. Professional Experience (scope: headcount, locations, team size)
+4. Education (HR degree, relevant qualifications)
+5. Certifications (AHRI, SHRM, CIPD, Diploma of HR)
+6. Additional: Volunteer HR work, committee memberships

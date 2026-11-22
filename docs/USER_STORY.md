@@ -1,6 +1,6 @@
 # 📄 AI Resume Assistant — Complete User Story Diagram
 
-> **Version:** Current (pre-RAG) — Knowledge files are statically injected into the prompt.
+> **Version:** Sprint 11 — Domain-aware RAG, deterministic scoring, ATS keyword gap analysis
 > **Date:** June 2026
 
 ---
@@ -17,40 +17,27 @@ flowchart TB
     INJECT_CSS --> RENDER_HEADER
     
     RENDER_HEADER["st.markdown: render gradient header with title and tagline"]
-    RENDER_HEADER --> LOAD_KNOWLEDGE
+    RENDER_HEADER --> INIT_RAG
 
     %% =============================================
-    %% 2. KNOWLEDGE LOADING (module level)
+    %% 2. RAG ENGINE INITIALIZATION (module level, runs once)
     %% =============================================
-    subgraph KNOWLEDGE_INIT["Module-Level: load_knowledge runs once on import"]
-        LOAD_KNOWLEDGE["load_knowledge function called"]
-        LOAD_KNOWLEDGE --> KNOWLEDGE_DIR["Read knowledge/ directory"]
-        KNOWLEDGE_DIR --> READ_ATS["Read ats_tips.txt"]
-        KNOWLEDGE_DIR --> READ_HC["Read healthcare_keywords.txt"]
-        KNOWLEDGE_DIR --> READ_BP["Read resume_best_practices.txt"]
-        
-        READ_ATS --> CHECK_ATS{"File exists?"}
-        CHECK_ATS -->|"Yes"| CONCAT_ATS["Append content + newlines to knowledge string"]
-        CHECK_ATS -->|"No"| SKIP_ATS["pass - silently skip"]
-        
-        READ_HC --> CHECK_HC{"File exists?"}
-        CHECK_HC -->|"Yes"| CONCAT_HC["Append content + newlines"]
-        CHECK_HC -->|"No"| SKIP_HC["pass"]
-        
-        READ_BP --> CHECK_BP{"File exists?"}
-        CHECK_BP -->|"Yes"| CONCAT_BP["Append content + newlines"]
-        CHECK_BP -->|"No"| SKIP_BP["pass"]
-        
-        CONCAT_ATS & CONCAT_HC & CONCAT_BP --> KNOWLEDGE_READY["Knowledge = single concatenated string"]
-        SKIP_ATS & SKIP_HC & SKIP_BP --> KNOWLEDGE_READY
+    subgraph RAG_INIT["Module-Level: init_rag() with @st.cache_resource runs once"]
+        INIT_RAG["get_engine() creates singleton RagEngine"]
+        INIT_RAG --> LOAD_MODEL["Load BAAI/bge-small-en-v1.5 embedding model (~80MB)"]
+        LOAD_MODEL --> CHROMADB_CONNECT["Connect to ChromaDB (local persistent storage)"]
+        CHROMADB_CONNECT --> BUILD_INDEX["build_index() - index all 18 knowledge files"]
+        BUILD_INDEX --> CHUNK_TEXT["heading-aware chunker: split at ## boundaries"]
+        CHUNK_TEXT --> ENCODE_CHUNKS["Encode 289 chunks into 384-dim vectors"]
+        ENCODE_CHUNKS --> STORE_VECTORS["Store vectors + text + domain metadata in ChromaDB"]
     end
 
-    LOAD_KNOWLEDGE --> KNOWLEDGE_READY
+    INIT_RAG --> RAG_READY
 
     %% =============================================
     %% 3. INITIAL UI RENDERING
     %% =============================================
-    KNOWLEDGE_READY --> INIT_UI_RENDER
+    RAG_READY --> INIT_UI_RENDER
 
     subgraph INIT_UI_RENDER["Rendering the Input Screen"]
         HEADER["Gradient header appears: dark blue, rounded, shadow"]
@@ -151,6 +138,17 @@ flowchart TB
         
         BRANCH_PROMPT -->|"ATS Job Match"| BUILD_ATS["Build: rules + schema + resume + job description"]
         
+        BUILD_RA --> RETRIEVE_KB["rag_engine.retrieve(resume, top_k=3)"]
+        RETRIEVE_KB --> CLASSIFY_DOMAIN["classify_domain: embedding similarity vs 16 domain descriptions"]
+        CLASSIFY_DOMAIN --> MARGIN_CHECK{"margin < 0.03?"}
+        MARGIN_CHECK -->|"Yes"| SEARCH_TWO["Search top 2 domains in ChromaDB"]
+        MARGIN_CHECK -->|"No"| SEARCH_ONE["Search single domain in ChromaDB"]
+        SEARCH_TWO & SEARCH_ONE --> TOP_CHUNKS["Retrieve top 3 relevant chunks"]
+        TOP_CHUNKS --> INJECT_KB["Inject domain-specific knowledge into prompt"]
+        
+        INJECT_KB --> BUILD_RA["Build: rules + schema + knowledge + resume"]
+        BUILD_ATS --> INJECT_KB
+
         BUILD_RA --> PROMPT_READY["Final prompt string ready"]
         BUILD_ATS --> PROMPT_READY
     end
@@ -229,17 +227,19 @@ flowchart TB
     end
 
     %% =============================================
-    %% 10. NORMALIZE SCORE
+    %% 10. NORMALIZE SCORE + DETERMINISTIC RUBRIC
     %% =============================================
-    subgraph NORMALIZE_STEP["normalize_score function"]
+    subgraph NORMALIZE_STEP["Score Processing"]
         GET_BREAKDOWN["b = result.get breakdown, empty dict"]
         EXTRACT_VALUES["Extract int values from breakdown dict"]
-        CHECK_VALUES{"values list non-empty?"}
-        CHECK_VALUES -->|"Empty"| RETURN_AS_IS["Return result unchanged"]
-        CHECK_VALUES -->|"Has values"| CALC_AVG["breakdown_avg = sum / count * 10"]
-        CALC_AVG --> GET_MODEL_SCORE["model_score = result.get score, 0"]
-        GET_MODEL_SCORE --> AVERAGE["result.score = int model_score + breakdown_avg / 2"]
-        AVERAGE --> RETURN_NORMALIZED["Return result with new score"]
+        CALC_AVG["breakdown_avg = sum / count * 10"]
+        GET_MODEL_SCORE["model_score = result.get score, 0"]
+        AVERAGE["result.score = int model_score + breakdown_avg / 2"]
+        GET_BREAKDOWN --> EXTRACT_VALUES --> CALC_AVG --> GET_MODEL_SCORE --> AVERAGE
+
+        AVERAGE --> RUBRIC["score_resume(resume) — deterministic weighted rubric"]
+        RUBRIC --> RUBRIC_SCORE["rubric_score = 0-100 based on 5 categories"]
+        RUBRIC_SCORE --> BLEND["Final score = rubric_score x 70% + llm_score x 30%"]
     end
 
     NORMALIZE_STEP --> SUCCESS_MSG["st.success: checkmark Resume analysis complete"]
@@ -255,68 +255,22 @@ flowchart TB
         subgraph METRIC_CARDS["4 Metric Cards - st.columns 4"]
             COL1["Column 1: Overall Score"]
             COL1 --> CARD1["score_color determines border + text color"]
-            CARD1 --> C1_RED["less than 40: red"]
-            CARD1 --> C1_AMBER["40 to 69: amber"]
-            CARD1 --> C1_GREEN["70 or more: green"]
             CARD1 --> C1_RENDER["st.markdown with score-card CSS class, shows /100"]
             
             COL2["Column 2: ATS Match"]
             COL2 --> ATS_VAL["ats_match times 10 = 0-100"]
-            ATS_VAL --> C2_COLOR["score_color same logic"]
-            C2_COLOR --> C2_RENDER["st.markdown score-card"]
+            ATS_VAL --> C2_RENDER["st.markdown score-card"]
             
             COL3["Column 3: Clarity"]
             COL3 --> CLARITY_VAL["clarity times 10 = 0-100"]
-            CLARITY_VAL --> C3_COLOR["score_color"]
-            C3_COLOR --> C3_RENDER["st.markdown score-card"]
+            CLARITY_VAL --> C3_RENDER["st.markdown score-card"]
             
             COL4["Column 4: Skills"]
             COL4 --> SKILLS_VAL["skills times 10 = 0-100"]
-            SKILLS_VAL --> C4_COLOR["score_color"]
-            C4_COLOR --> C4_RENDER["st.markdown score-card"]
+            SKILLS_VAL --> C4_RENDER["st.markdown score-card"]
         end
 
-        METRIC_CARDS --> DIVIDER1["st.divider"]
-        
-        subgraph CHARTS["Charts - 2 columns"]
-            DIVIDER1 --> GAUGE_COL
-        
-            GAUGE_COL["st.columns 2 left column"]
-            GAUGE_COL --> GAUGE_RENDER["render_score_gauge: Plotly Indicator gauge, value=score, range 0-100, 3 color steps, height 250"]
-            
-            RADAR_COL["st.columns 2 right column"] 
-            RADAR_COL --> RADAR_RENDER["render_radar: Plotly Scatterpolar, 5 axes from breakdown, range 0-10, blue fill, height 400"]
-        end
-
-        CHARTS --> EXPANDER
-
-        subgraph EXPANDER_SECTION["Breakdown Expander"]
-            EXPANDER["st.expander: chart with up arrow View detailed breakdown 0-10 scale"]
-            EXPANDER --> EXPANDER_COLS["st.columns 5"]
-            EXPANDER_COLS --> EACH_METRIC["For each key in breakdown: show st.metric with label = key.title, value = raw 0-10 number"]
-        end
-
-        EXPANDER --> DIVIDER2["st.divider"]
-
-        subgraph SUMMARY_SECTION["Summary Box"]
-            DIVIDER2 --> SUMMARY_RENDER["st.markdown with summary-box CSS class: gradient background, rounded, left border, h4 pin Summary, p: result.summary text"]
-        end
-
-        SUMMARY_RENDER --> FEEDBACK_SECTION
-
-        subgraph FEEDBACK_SECTION["3 Feedback Cards"]
-            STRENGTHS_CARD["render_styled_list: title=Strengths, card-green, icon muscle"]
-            
-            WEAKNESSES_CARD["render_styled_list: title=Weaknesses, card-amber, icon warning"]
-            
-            IMPROVEMENTS_CARD["render_styled_list: title=Improvements, card-blue, icon rocket"]
-            
-            STRENGTHS_CARD --> WEAKNESSES_CARD
-            WEAKNESSES_CARD --> IMPROVEMENTS_CARD
-        end
-    end
-
-    FEEDBACK_SECTION --> PDF_SECTION
+        MET
 
     %% =============================================
     %% 12. PDF DOWNLOAD
@@ -394,6 +348,8 @@ flowchart TB
     %% =============================================
     %% STYLES
     %% =============================================
+    style RAG_INIT fill:#f0fdf4,stroke:#22c55e,color:#166534
+    
     style START fill:#1e3a5f,color:#fff,stroke:#1e3a5f
     style END fill:#1e3a5f,color:#fff,stroke:#1e3a5f
     style HEADER fill:#2d6a9f,color:#fff,stroke:#2d6a9f
@@ -474,10 +430,13 @@ flowchart TB
 
 ### ⚙️ Background: Module-level initialization (runs once)
 - `load_dotenv()` — loads `.env` for `OPENROUTER_API_KEY`
-- `load_knowledge()` — reads all 3 files in `knowledge/`, concatenates into single string
+- `init_rag()` — creates singleton `RagEngine` with `@st.cache_resource`:
+  - Loads embedding model `BAAI/bge-small-en-v1.5`
+  - Connects to ChromaDB, builds heading-aware index (289 chunks)
+  - Computes domain embeddings for 16 career domains
 - `client = OpenAI(base_url="https://openrouter.ai/api/v1", api_key=...)` — creates API client
 - `inject_css()` — registers all custom CSS styles for the Streamlit page
-- Logging configured to write to `resume_app.log`
+- `scoring.py` loaded — deterministic rubric scoring + ATS gap analysis
 
 ---
 

@@ -1,31 +1,47 @@
-Accounting & Finance Career Keywords for Resume Optimization
+# Accounting & Finance Resume Evaluation Guidance
+# Use this to evaluate and provide feedback on accounting resumes.
 
-1. ACCOUNTING ROLES AND TITLES
-Accountant, Staff Accountant, Senior Accountant, Accounting Manager, Controller, Financial Controller, Chief Financial Officer (CFO), Certified Public Accountant (CPA), Chartered Accountant (CA), Management Accountant, Cost Accountant, Tax Accountant, Audit Associate, Audit Manager, Internal Auditor, External Auditor, Forensic Accountant, Financial Analyst, Budget Analyst, Accounts Payable Clerk, Accounts Receivable Clerk, Bookkeeper, Payroll Specialist, Tax Preparer, Accounting Assistant, Financial Reporting Manager, Treasury Analyst, Credit Analyst, Risk Analyst.
+## Key Resume Strengths to Look For
+- Professional certifications (CPA, CA, IPA, ACCA, CFA) with membership numbers
+- Software proficiency (Xero, QuickBooks, MYOB, SAP, Oracle)
+- Month-end/year-end close process experience and timelines managed
+- Audit experience with specific findings and outcomes
+- Process improvement metrics (e.g., "Reduced month-end close from 10 to 5 days")
+- Stakeholder communication and cross-department collaboration
 
-2. CORE ACCOUNTING SKILLS
-Financial Reporting, Bookkeeping, General Ledger Management, Account Reconciliation, Journal Entries, Trial Balance, Financial Statements, Income Statement, Balance Sheet, Cash Flow Statement, Budgeting, Forecasting, Variance Analysis, Cost Accounting, Inventory Accounting, Revenue Recognition, Accrual Accounting, Cash Accounting, Tax Preparation, Tax Planning, Audit Preparation, Internal Controls, SOX Compliance, GAAP (Generally Accepted Accounting Principles), IFRS (International Financial Reporting Standards), AASB (Australian Accounting Standards), BAS Preparation, IAS Preparation, GST Reporting, PAYG Reporting, Superannuation, Fringe Benefits Tax.
+## Metrics That Impress Accounting Managers
+- Time saved through process automation (e.g., "Automated AP process saving 20 hrs/week")
+- Error reduction percentages in financial reporting
+- Number of entities or ledgers managed
+- Reconciliation completion rates and timeliness
+- Budget variance analysis accuracy
+- Cost savings identified through analysis
 
-3. ACCOUNTING TOOLS AND SOFTWARE
-QuickBooks Online, QuickBooks Desktop, Xero, MYOB, Sage, SAP, Oracle Financials, Microsoft Dynamics 365, NetSuite, FreshBooks, Wave, Zoho Books, Excel (Advanced), VLOOKUP, Pivot Tables, Power Query, Power BI, Tableau, Alteryx, SAP Concur, Coupa, Expensify, ADP, PayGlobal, KeyPay, Deputy, Brennan, Class Super, BGL CAS 360, HandiSoft, Document Management Systems, Thomson Reuters Checkpoint, CCH iFirm, TaxCalc.
+## Key Areas to Evaluate
+### Technical Skills
+- Accounting standards: GAAP, IFRS, AASB, SOX compliance
+- Tax knowledge: BAS, GST, PAYG, corporate tax, FBT
+- Financial reporting: P&L, Balance Sheet, Cash Flow, variance analysis
+- Software: Excel (advanced), ERP systems, accounting platforms
 
-4. FINANCIAL ANALYSIS SKILLS
-Financial Modeling, DCF Analysis, Valuation, Ratio Analysis, Liquidity Ratios, Profitability Ratios, Solvency Ratios, Efficiency Ratios, ROI Analysis, Break-Even Analysis, Cost-Volume-Profit Analysis, Trend Analysis, Horizontal Analysis, Vertical Analysis, Sensitivity Analysis, Scenario Planning, Financial Forecasting, Cash Flow Forecasting, Working Capital Management, Capital Budgeting, NPV Analysis, IRR Calculation, Payback Period, Risk Assessment, Investment Analysis, Portfolio Management.
+### Soft Skills
+- Attention to detail and accuracy focus
+- Deadline management (especially month-end, year-end)
+- Communication with non-finance stakeholders
+- Ethics and confidentiality handling
 
-5. AUDIT AND COMPLIANCE
-Internal Audit, External Audit, Operational Audit, Compliance Audit, Risk-Based Audit, Audit Planning, Audit Execution, Audit Reporting, Control Testing, Substantive Testing, Walkthroughs, Sampling, Audit Evidence, Audit Documentation, Working Papers, Management Letters, Internal Control Evaluation, Sarbanes-Oxley (SOX), AICPA, PCAOB Standards, ISA Standards, ASX Corporate Governance Council, APESB Standards, Code of Ethics, Independence Requirements, Conflict of Interest, Fraud Detection, Fraud Investigation, Whistleblower Policies.
+## Common Resume Mistakes in Accounting
+- Listing software without proficiency level
+- No mention of reporting timelines or deadlines met
+- Missing certification status or membership numbers
+- Vague descriptions like "assisted with" or "supported"
+- No examples of process improvements or efficiency gains
+- Failing to mention audit experience or outcomes
 
-6. TAXATION KNOWLEDGE
-Corporate Tax, Individual Tax, Partnership Tax, Trust Tax, GST, VAT, Sales Tax, Payroll Tax, Capital Gains Tax, Fringe Benefits Tax, Dividend Imputation, Franking Credits, Tax Consolidation, Transfer Pricing, International Tax, Double Tax Agreements, Tax Returns, Tax Lodgments, BAS Returns, IAS Returns, Tax Reconciliation, Tax Effect Accounting, Deferred Tax Assets, Deferred Tax Liabilities, Thin Capitalisation, Tax Compliance, Tax Planning, Tax Minimisation, ATO Audits, Tax Rulings, Objections and Appeals.
-
-7. CERTIFICATIONS AND QUALIFICATIONS
-CPA Australia, Chartered Accountant (CA ANZ), Institute of Public Accountants (IPA), Certified Practising Accountant, Association of Chartered Certified Accountants (ACCA), Certified Management Accountant (CMA), Certified Internal Auditor (CIA), Certified Fraud Examiner (CFE), Chartered Financial Analyst (CFA), Certified Financial Planner (CFP), Registered Tax Agent, BAS Agent, Diploma of Accounting, Advanced Diploma of Accounting, Bachelor of Commerce, Bachelor of Accounting, Master of Accounting, Master of Finance.
-
-8. RESUME KEYWORDS FOR ACCOUNTING
-Month-End Close, Year-End Close, Financial Accuracy, Data Entry, Record Keeping, Financial Analysis, Budget Management, Cost Control, Profit Improvement, Process Improvement, Reconciliation, Reporting Deadlines, Stakeholder Communication, Cross-Functional Collaboration, Attention to Detail, Analytical Thinking, Problem Solving, Time Management, Organisational Skills, Confidentiality, Integrity, Professional Ethics, Continuous Improvement, Team Leadership, Mentoring.
-
-9. INDUSTRY-SPECIFIC ACCOUNTING
-Public Accounting, Private Accounting, Corporate Accounting, Government Accounting, Not-for-Profit Accounting, Chartered Accounting Firm, Big 4 Accounting (Deloitte, PwC, EY, KPMG), Mid-Tier Firm, Boutique Firm, SME Accounting, Management Accounting, Fund Accounting, Project Accounting, Construction Accounting, Healthcare Accounting, Manufacturing Accounting, Retail Accounting, Property Accounting, Hospitality Accounting, Financial Services Accounting, Banking, Insurance, Superannuation.
-
-10. COMMON ACCOUNTING INTERVIEW TOPICS
-Technical Accounting Questions, IFRS vs GAAP Differences, Debits and Credits, Journal Entry Scenarios, Reconciliation Walkthrough, Audit Scenario Questions, Tax Scenario Questions, Excel Proficiency Test, Case Study Analysis, Behavioural Questions, STAR Method, Ethical Dilemmas, Time Management Scenarios, Client Handling Scenarios, Regulatory Updates, Career Progression Goals.
+## Resume Structure Recommendations
+1. Professional Summary (years experience, qualifications, industries served)
+2. Technical Skills (Software, Standards, Specialisations)
+3. Professional Experience (with scope: entities, team size, reporting lines)
+4. Education (degree, institution, graduation year)
+5. Certifications & Professional Memberships (membership numbers)
+6. Additional: Languages, volunteer accounting work

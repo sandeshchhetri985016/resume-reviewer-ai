@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: resume-reviewer
+    runtime: docker
+    region: oregon
+    plan: free
+    
+    # Health check
+    healthCheckPath: /_stcore/health
+    
+    # Environment variables (set OPENROUTER_API_KEY in Render dashboard)
+    envVars:
+      - key: STREAMLIT_SERVER_HEADLESS
+        value: "true"
+      - key: STREAMLIT_LOGGER_LEVEL
+        value: "info"
+      - key: OPENROUTER_API_KEY
+        sync: false  # Must be set manually in Render dashboard
+    
+    # Persistent disk for ChromaDB
+    disks:
+      - name: chroma_storage
+        mountPath: /app/chroma_db
+        sizeGB: 1
+      - name: logs_storage
+        mountPath: /app/logs
+        sizeGB: 1

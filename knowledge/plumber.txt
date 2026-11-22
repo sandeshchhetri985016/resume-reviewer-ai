@@ -1,19 +1,64 @@
-Plumber & Plumbing Career Keywords for Resume Optimization
+# Plumber Resume Evaluation Guidance
+# Use this to evaluate and provide feedback on plumber resumes.
 
-1. PLUMBING ROLES AND TITLES
-Plumber, Licensed Plumber, Master Plumber, Apprentice Plumber, Plumbing Contractor, Plumbing Installer, Maintenance Plumber, Service Plumber, Commercial Plumber, Residential Plumber, Industrial Plumber, Plumbing Technician, Gas Fitter, Drainage Plumber, Roof Plumber, Water Supply Plumber, Fire Protection Plumber, Sprinkler Fitter, Backflow Prevention Specialist, Hot Water System Installer, Solar Hot Water Installer, Hydronic Heating Technician, Blocked Drain Specialist, Pipe Layer, Waterproofing Specialist, Gas Installation Technician, Air Conditioning and Refrigeration Plumber, Plumbing Supervisor, Plumbing Inspector, Plumbing Estimator, Plumbing Project Manager.
+## Key Resume Strengths to Look For
+- Licenses and tickets with expiry dates (Plumbing License, Gas Fitting License, White Card)
+- Project scope (e.g., "Managed plumbing installation for 50-unit apartment complex")
+- Safety record (e.g., "Zero safety incidents over 8 years in commercial plumbing")
+- Supervision and apprentice mentoring (e.g., "Supervised 2 apprentices across multiple residential builds")
+- Specialisation areas (domestic, commercial, industrial, gas, drainage, roofing)
+- Backflow testing and certifications with results
 
-2. PLUMBING SKILLS AND COMPETENCIES
-Pipe Installation, Pipe Repair, Pipe Replacement, Leak Detection, Leak Repair, Blocked Drains, Drain Cleaning, Drain Repair, Drainage Systems, Sewer Systems, Stormwater Systems, Downpipes, Gutters, Roof Plumbing, Water Supply Systems, Water Mains, Pressure Systems, Backflow Prevention, Backflow Testing, Backflow Devices, Gas Fitting, Gas Installation, Gas Appliance Connection, Gas Leak Detection, Hot Water Systems, Electric Hot Water, Gas Hot Water, Solar Hot Water, Heat Pump Hot Water, Tankless Hot Water, Continuous Flow Hot Water, Storage Hot Water, Hydronic Heating, Underfloor Heating, Radiator Installation, Boiler Installation, Boiler Maintenance, Pump Systems, Pump Installation, Pump Maintenance, Water Tanks, Rainwater Harvesting, Greywater Systems, Fire Hydrants, Fire Sprinklers, Fire Hose Reels, Sanitary Plumbing, Toilet Installation, Basin Installation, Sink Installation, Bath Installation, Shower Installation, Tap Installation, Mixer Installation, Vanity Installation, Kitchen Plumbing, Laundry Plumbing, Outdoor Plumbing.
+## Metrics That Impress Plumbing Contractors
+- Number of projects completed (new builds, renovations, maintenance contracts)
+- Team size supervised
+- Job completion rates on time and budget
+- Safety incident record
+- Client retention or repeat business
+- Complex installation examples (hot water systems, sewerage infrastructure)
 
-3. TOOLS AND EQUIPMENT
-Pipe Wrench, Adjustable Wrench, Basin Wrench, Strap Wrench, Chain Wrench, Socket Set, Spanners, Multi-Grips, Pliers, Pipe Cutters, Copper Pipe Cutter, PVC Pipe Cutter, Tube Cutter, Hacksaw, Reciprocating Saw, Jigsaw, PVC Glue, Solvent Cement, Pipe Threader, Threading Machine, Press Tool, ProPress, Crimping Tool, Flaring Tool, Swaging Tool, Bending Spring, Pipe Bender, Plumbing Snake, Electric Eel, Drain Auger, Hydro-Jetter, CCTV Drain Camera, Water Jetter, Plunger, Toilet Auger, Basin Wrench, Tap Seats, Valve Seats, Soldering Torch, MAP Gas, Oxy-Acetylene, Lead-Free Solder, Flux, Teflon Tape, Thread Sealant, Pipe Dope, Pressure Gauge, Gas Detector, Smoke Machine, Digital Multimeter, Temperature Gauge, Thermal Imaging Camera, Inspection Camera, Manhole Key, Shovel, Pick, Trenching Tools, PPE, Hard Hat, Hi-Vis Vest, Safety Glasses, Gloves, Steel Cap Boots, Ear Plugs, Dust Mask, Respirator, Harness.
+## Key Areas to Evaluate
+### Licenses & Tickets
+- Plumbing License (with endorsement level)
+- Gas Fitting License (Class A, B)
+- Drainage License
+- Water Supply License
+- Backflow Prevention Certification (testing and installation)
+- White Card / Construction Induction
+- High Risk Work License (EWP, forklift if applicable)
+- First Aid, CPR, Working at Heights, Confined Space
+- Refrigerant Handling License (if relevant)
 
-4. CERTIFICATIONS AND LICENSES
-Plumbing License, Qualified Plumber, Licensed Plumber, Registered Plumber, Plumbing Contractors License, Certificate III in Plumbing, Certificate IV in Plumbing and Services, Diploma of Plumbing and Services, Apprenticeship, Trade Certificate, Gas Fitting License, Gas Fitter Class 1, Gas Fitter Class 2, Hot Water Endorsement, Backflow Prevention Endorsement, Backflow Testing Certificate, Fire Protection Endorsement, Water Supply Endorsement, Sanitary Endorsement, Drainage Endorsement, Roof Plumbing Endorsement, Mechanical Services Endorsement, Hydronic Heating Certificate, Refrigerant Handling License, ARC Tick, White Card (Construction Induction), Working at Heights, Confined Space Entry, First Aid Certificate, CPR Certificate, Driver's License, Medium Rigid License (MR), Heavy Rigid License (HR), Forklift License.
+### Experience Types
+- Domestic: new builds, renovations, bathroom renovations, hot water systems
+- Commercial: fit-outs, sanitary plumbing, commercial gas fitting
+- Industrial: process piping, compressed air, steam systems
+- Roofing: gutters, downpipes, stormwater, roof sheeting
+- Drainage: sewer, stormwater, excavation, trenching
+- Maintenance: fault finding, reactive repairs, preventative maintenance
 
-5. PLUMBING RESUME KEYWORDS
-Plumbing Installation, Plumbing Maintenance, Plumbing Repairs, Fault Finding, Problem Solving, Customer Service, Communication, Time Management, Reliability, Punctuality, Safety Conscious, WHS, Manual Handling, Physical Fitness, Team Player, Independent Worker, Attention to Detail, Quality Workmanship, Trade Qualified, Licensed, Registered, Insured, Police Check, Working with Children Check, White Card, Apprenticeship, Trade Experience, On-Call, Rotating Roster, Overtime, Emergency Call-Outs.
+### Technical Skills
+- Pipe types: copper, PVC, PEX, poly, galvanized
+- Welding: oxy, MIG, TIG for plumbing applications
+- Gas appliance installation and testing
+- Backflow testing and certification
+- Thermostatic mixing valve installation
+- Sewer camera inspection
+- Blueprint and plan reading
 
-6. COMMON PLUMBER INTERVIEW TOPICS
-Practical Experience, Types of Work Performed, Tools Proficiency, Safety Knowledge, Regulations Knowledge, Customer Interaction, Teamwork, Problem Solving Examples, Emergency Call-Out Experience, Career Goals, Trade Licenses, Continuous Learning.
+## Common Resume Mistakes for Plumbers
+- License number or expiry date missing
+- No project examples with scope or complexity
+- Gas fitting license not mentioned or expired
+- Safety record not highlighted
+- Team supervision or apprenticeship training omitted
+- Tools and equipment experience not listed
+- Vague descriptions like "general plumbing work"
+
+## Resume Structure Recommendations
+1. Professional Summary (years experience, sectors, key strengths)
+2. Licenses & Tickets (with numbers and expiry dates — critical)
+3. Professional Experience (project type, scope, responsibilities, outcomes)
+4. Key Projects (notable installations or complex work)
+5. Education (trade qualification, apprenticeship completion)
+6. Additional: Safety awards, special training, referee availability

@@ -1,22 +1,67 @@
-Nursing & Healthcare Career Keywords for Resume Optimization
+# Nursing Resume Evaluation Guidance
+# Use this to evaluate and provide feedback on nursing resumes.
 
-1. NURSING ROLES AND TITLES
-Registered Nurse (RN), Enrolled Nurse (EN), Assistant in Nursing (AIN), Personal Care Worker (PCW), Nurse Practitioner (NP), Clinical Nurse Specialist (CNS), Clinical Nurse Consultant (CNC), Nurse Educator, Nurse Manager, Nurse Unit Manager (NUM), Director of Nursing (DON), Nursing Director, Executive Director of Nursing, Aged Care Registered Nurse, Community Health Nurse, Mental Health Nurse, Mental Health Practitioner, Psychiatric Nurse, Emergency Nurse, ICU Nurse, Critical Care Nurse, Operating Theatre Nurse, Perioperative Nurse, Scrub Nurse, Scout Nurse, Recovery Nurse, Anaesthetic Nurse, Paediatric Nurse, Neonatal Nurse, Midwife, Maternal Child Health Nurse, Palliative Care Nurse, Oncology Nurse, Renal Nurse, Dialysis Nurse, Diabetes Educator, Wound Care Nurse, Stomal Therapy Nurse, Continence Nurse, Infection Control Nurse, Research Nurse, Clinical Trials Nurse, School Nurse, Occupational Health Nurse, Flight Nurse, Retrieval Nurse, Remote Area Nurse, Rural Generalist Nurse, Drug and Alcohol Nurse, Forensic Nurse, Nurse Immuniser, Nurse Surveyor, Clinical Facilitator, Preceptor.
+## Key Resume Strengths to Look For
+- Patient ratios and caseload sizes (e.g., "Managed 12-bed ward independently")
+- Clinical competency breadth (e.g., "Proficient in wound care, medication admin, and palliative care")
+- Audit and compliance results (e.g., "100% compliance in NSQHS standards audit")
+- Continuing Professional Development (CPD) hours recorded
+- Specialty qualifications or post-graduate study
+- Preceptor/mentoring experience (e.g., "Preceptored 6 new graduate RNs")
 
-2. CLINICAL SKILLS AND COMPETENCIES
-Patient Assessment, Vital Signs Monitoring, Blood Pressure, Temperature, Pulse, Respiration, Oxygen Saturation, BGL Monitoring, Pain Assessment, Comprehensive Health Assessment, Head to Toe Assessment, Clinical Handover, ISBAR, Nursing Care Plans, Care Planning, Care Documentation, Progress Notes, Clinical Documentation, Electronic Medical Records (EMR), My Health Record, Medication Administration, Oral Medications, Subcutaneous Injections, Intramuscular Injections, Intravenous Therapy, IV Cannulation, IV Medications, IV Fluids, Blood Transfusion, Medication Calculations, Medication Charts, Drug Administration, S8 Medications, Controlled Drugs, Narcotic Administration, PRN Medications, Medication Review, Wound Care, Wound Assessment, Wound Dressing, Aseptic Technique, Sterile Technique, Wound Management, Pressure Injury Prevention, Staging, Wound Photography, Suture Removal, Staple Removal, Drain Removal, Catheter Care, IDC Insertion, IDC Removal, Catheter Management, Catheter Care, Stoma Care, Colostomy, Ileostomy, Urostomy, PEG Care, Nasogastric Tube, NG Insertion, NG Feeding, Enteral Feeding, Parenteral Nutrition, Tracheostomy Care, Tracheostomy Suctioning, Chest Drain Care, Central Line Care, PICC Line Care.
+## Metrics That Impress Nurse Managers
+- Patient satisfaction scores and improvements
+- Incident reduction rates (falls, medication errors, pressure injuries)
+- Number of beds/patients managed per shift
+- Wound healing rates or pressure injury prevention stats
+- Training delivered to colleagues (e.g., "Delivered manual handling training to 30 staff")
+- Quality improvement project outcomes (e.g., "Reduced catheter-associated UTIs by 25%")
+- Team coordination (e.g., "Coordinated discharge planning for 15 patients/week")
 
-3. SPECIALTY NURSING AREAS
-Aged Care Nursing, Dementia Care, Palliative Care Nursing, End of Life Care, Pain Management, Symptom Management, Cancer Nursing, Chemotherapy Administration, Immunotherapy, Radiation Therapy Nursing, Cardiac Nursing, ECG Interpretation, Cardiac Monitoring, Telemetry, CCU, ICU, Critical Care Nursing, Ventilator Management, CPAP, BiPAP, Arterial Lines, CVP Monitoring, Emergency Nursing, Triage, Resuscitation, Trauma Nursing, Emergency Assessment, Paediatric Nursing, Child Health, Developmental Assessment, Immunisation, School Health, Neonatal Nursing, Special Care Nursery, NICU, Midwifery, Antenatal, Postnatal, Labour and Delivery, Birthing, Maternal Health, Mental Health Nursing, Psychosocial Assessment, Risk Assessment, Mental Status Examination, Therapeutic Communication, De-escalation, Behaviour Management, Suicide Risk Assessment, Crisis Intervention, Electroconvulsive Therapy (ECT) Nursing, Community Health Nursing, Home Visits, Health Promotion, Disease Prevention, Chronic Disease Management, Diabetes Management, Asthma Management, COPD Management, Heart Failure Management, Renal Nursing, Haemodialysis, Peritoneal Dialysis, Pre-Dialysis, Transplantation Nursing, Perioperative Nursing, Pre-Operative Assessment, Intraoperative Care, Post-Operative Care, Day Surgery, Anaesthetic Nursing, Recovery Nursing.
+## Critical Keywords to Check For
+### Clinical Skills
+- Medication administration (oral, IV, IM, SC), medication calculations
+- Wound assessment and dressing, aseptic technique
+- Vital signs monitoring, pain assessment, BGL
+- Catheter care, stoma care, PEG care, tracheostomy care
+- Manual handling, falls risk assessment, pressure area care
 
-4. ESSENTIAL NURSING ATTRIBUTES
-Clinical Reasoning, Critical Thinking, Problem Solving, Decision Making, Communication, Active Listening, Empathy, Compassion, Patience, Teamwork, Collaboration, Delegation, Supervision, Leadership, Advocacy, Patient Advocacy, Cultural Competence, Cultural Sensitivity, Respect for Dignity, Professional Boundaries, Accountability, Responsibility, Ethical Practice, Confidentiality, Privacy, Honesty, Integrity, Self-Care, Resilience, Adaptability, Flexibility, Time Management, Prioritisation, Organisational Skills, Attention to Detail, Manual Dexterity, Physical Stamina, Stress Management.
+### Specialty Areas
+- Aged care: dementia care, palliative care, ACFI/AN-ACC
+- Critical care: ventilator management, arterial lines, CPAP/BiPAP
+- Emergency: triage, resuscitation, trauma assessment
+- Mental health: risk assessment, de-escalation, therapeutic communication
+- Perioperative: scrub, scout, recovery, anaesthetic nursing
 
-5. CERTIFICATIONS AND REGISTRATIONS
-AHPRA Registration, Registered Nurse (RN), Enrolled Nurse (EN), Nurse Practitioner Endorsement, Midwifery Endorsement, CPR Certificate, Basic Life Support (BLS), Advanced Life Support (ALS), Advanced Cardiac Life Support (ACLS), Paediatric Advanced Life Support (PALS), Neonatal Resuscitation Program (NRP), Emergency Triage Education Kit (ETEK), Triage Certificate, Immunisation Certificate, Venepuncture Certificate, Cannulation Certificate, Medication Endorsement (for ENs), Wound Care Certificate, Palliative Care Certificate, Dementia Care Certificate, Infection Control Certificate, Manual Handling Certificate, First Aid Certificate, Bachelor of Nursing, Master of Nursing, Graduate Diploma of Nursing, Graduate Certificate of Nursing, PhD in Nursing.
+### Regulatory & Compliance
+- AHPRA registration, NMBA standards, Code of Conduct
+- NSQHS Standards, Aged Care Quality Standards
+- Clinical governance, incident reporting, open disclosure
+- Scope of practice, delegation, professional boundaries
 
-6. NURSING RESUME KEYWORDS
-Patient Care, Person-Centred Care, Clinical Excellence, Evidence-Based Practice, Quality Improvement, Accreditation, NSQHS Standards, Aged Care Quality Standards, Safety and Quality, Clinical Governance, Risk Management, Incident Reporting, Root Cause Analysis, Open Disclosure, Clinical Audit, Research, Professional Development, Continuing Education, Mandatory Training, Orientation, Preceptorship, Mentoring, Preceptor, Preceptee, Clinical Placement, Student Support, Pre-Registration, Post-Registration, Specialty Qualification, Advanced Practice, Extended Practice, Scope of Practice, Nursing Standards, Code of Conduct, Code of Ethics, ICN Code, NMBA Standards, Fitness to Practise, Recency of Practice, Continuing Professional Development (CPD).
+## Common Resume Mistakes in Nursing
+- Listing clinical skills without demonstrating competency level or application
+- Missing AHPRA registration number or endorsement details
+- No evidence of CPD or professional development activities
+- Failing to show progression (e.g., EN → RN → CNS → NUM)
+- Omitting shift coordination or team leadership experience
+- Not mentioning specialty certifications (ALS, PALS, Immunisation)
+- Using vague language instead of specific clinical scenarios
 
-7. COMMON NURSING INTERVIEW TOPICS
-Clinical Scenario Questions, Patient Assessment Scenarios, Medication Safety, Infection Control, Communication with Patients, Communication with Families, Teamwork Examples, Conflict Resolution, Ethical Dilemmas, Scope of Practice, Delegation, Time Management, Stress Management, Career Motivation, Specialty Interest, Evidence-Based Practice, Quality Improvement, Professional Development Goals.
+## Certifications & Licenses to Check
+- AHPRA Registration (RN, EN, or Nurse Practitioner) — include registration number
+- CPR/BLS (current — within 12 months)
+- ALS (Advanced Life Support) for acute/critical care roles
+- Immunisation Certificate for community health roles
+- Venepuncture/Cannulation Certificate where applicable
+- Triage Certificate for emergency roles
+- Mentor/Preceptor qualifications
+
+## Resume Structure Recommendations for Nursing
+1. Professional Summary (years experience, clinical specialty, key strengths)
+2. Clinical Competencies (categorized: Clinical Skills, Communication, Leadership)
+3. Professional Experience (with quantified patient outcomes and team coordination)
+4. Education (nursing degree, post-graduate qualifications)
+5. Certifications & Registrations (AHPRA #, BLS, ALS, specialty certs — with expiry dates)
+6. Professional Development (CPD hours, conferences, in-services)
+7. Additional: Languages, Volunteer Work, Professional Memberships

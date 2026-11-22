@@ -1,51 +1,66 @@
-Software Engineering & IT Career Keywords for Resume Optimization
+# Software Engineering Resume Evaluation Guidance
+# Use this to evaluate and provide feedback on software engineering resumes.
 
-1. SOFTWARE ENGINEERING ROLES AND TITLES
-Software Engineer, Software Developer, Full Stack Developer, Frontend Developer, Backend Developer, Web Developer, Mobile Developer, iOS Developer, Android Developer, DevOps Engineer, Site Reliability Engineer (SRE), Platform Engineer, Infrastructure Engineer, Cloud Engineer, Data Engineer, Machine Learning Engineer, AI Engineer, Systems Engineer, Embedded Engineer, Firmware Engineer, QA Engineer, Test Automation Engineer, Security Engineer, Penetration Tester, Solutions Architect, Technical Lead, Engineering Manager, Staff Engineer, Principal Engineer, Distinguished Engineer.
+## Key Resume Strengths to Look For
+- Open source contributions with GitHub links and stars
+- Quantified impact (e.g., "Reduced API latency by 60%", "Improved test coverage from 45% to 92%")
+- System design experience: architecture decisions, trade-off reasoning
+- Production experience: deployments, on-call, incident response
+- Full SDLC involvement from requirements to monitoring
+- Multiple programming languages demonstrated with depth
 
-2. PROGRAMMING LANGUAGES
-Java, Python, JavaScript, TypeScript, C, C++, C#, Go, Rust, Kotlin, Swift, Ruby, PHP, Scala, R, MATLAB, Dart, Lua, Perl, Haskell, Clojure, Elixir, Erlang, Groovy, Shell Scripting, Bash, PowerShell, SQL, PL/SQL, T-SQL, Assembly, COBOL, Fortran, Solidity, HTML, CSS, Sass, Less.
+## Metrics That Impress Engineering Managers
+- Performance improvements (latency, throughput, memory usage)
+- Test coverage percentages and quality metrics
+- Number of production deployments per week/month
+- Team size led or mentored
+- Code review velocity (e.g., "Reviewed 200+ PRs annually")
+- Bug reduction or incident response times
+- Feature adoption or user impact metrics
 
-3. WEB DEVELOPMENT FRAMEWORKS AND LIBRARIES
-React, Angular, Vue.js, Svelte, Next.js, Nuxt.js, Gatsby, Remix, Express.js, Django, Flask, FastAPI, Spring Boot, Spring Framework, ASP.NET, ASP.NET Core, Ruby on Rails, Laravel, Symfony, Phoenix, Play Framework, Node.js, Deno, Bun, jQuery, Bootstrap, Tailwind CSS, Material UI, Chakra UI, Shadcn UI, D3.js, Three.js, Chart.js, Socket.io.
+## Critical Areas to Evaluate
+### Technical Stack Fit
+- Languages: Does the resume show depth in the languages the job requires?
+- Frameworks: React vs Angular, Django vs Flask — match to job description
+- Infrastructure: Cloud (AWS/GCP/Azure), containers (Docker/K8s), CI/CD
+- Databases: SQL vs NoSQL, ORM usage, query optimization experience
 
-4. DATABASES AND DATA STORES
-Relational Databases: MySQL, PostgreSQL, Oracle Database, Microsoft SQL Server, SQLite, MariaDB, Amazon RDS, Aurora.
-NoSQL Databases: MongoDB, Cassandra, Redis, DynamoDB, Couchbase, Firebase Firestore, Neo4j, Elasticsearch, InfluxDB, TimescaleDB.
-Data Warehousing: Snowflake, BigQuery, Redshift, Databricks.
-Caching: Redis, Memcached, CDN, Varnish.
+### System Design
+- Microservices vs monolith experience
+- API design (REST, GraphQL, gRPC)
+- Message queues, caching strategies, event-driven architecture
+- Scalability considerations (horizontal scaling, sharding, CDN)
 
-5. CLOUD PLATFORMS AND SERVICES
-Amazon Web Services (AWS): EC2, S3, Lambda, API Gateway, DynamoDB, RDS, Route 53, CloudFront, SQS, SNS, Step Functions, CloudFormation, ECS, EKS, Fargate, IAM, VPC, CloudWatch, Kinesis, Glue, Athena, SageMaker.
-Microsoft Azure: Azure Functions, Azure App Service, Azure DevOps, Azure SQL Database, Cosmos DB, Azure Blob Storage, Azure Kubernetes Service (AKS), Azure Active Directory, Azure Virtual Machines, Logic Apps.
-Google Cloud Platform (GCP): Compute Engine, Cloud Functions, Cloud Run, Google Kubernetes Engine (GKE), Cloud Storage, BigQuery, Firestore, Pub/Sub, Dataflow, Cloud Build, Cloud Deployment Manager.
+### Engineering Practices
+- Testing strategy (unit, integration, E2E, TDD/BDD)
+- CI/CD pipelines owned or improved
+- Code review quality and mentoring
+- Agile/Scrum ceremonies participation
+- Technical documentation habits
 
-6. DEVOPS AND CI/CD TOOLS
-Docker, Kubernetes, Helm, Terraform, Pulumi, Ansible, Puppet, Chef, Jenkins, GitLab CI/CD, GitHub Actions, CircleCI, Travis CI, ArgoCD, Flux, Spinnaker, Prometheus, Grafana, ELK Stack (Elasticsearch, Logstash, Kibana), Datadog, New Relic, Splunk, OpenTelemetry, Istio, Linkerd, Envoy, Consul, Vault.
+## Common Resume Mistakes in Software Engineering
+- Listing technologies without showing depth or context of use
+- Missing GitHub, portfolio, or live demo links
+- No quantified impact — just listing job duties
+- Buzzword stuffing (listing 30+ technologies without actual proficiency)
+- Not mentioning code review, mentoring, or team collaboration
+- Omitting production experience (deployments, monitoring, incident response)
+- Vague descriptions like "worked on" or "was involved in"
+- No personal projects or side work (for early-career candidates)
 
-7. VERSION CONTROL AND COLLABORATION
-Git, GitHub, GitLab, Bitbucket, Subversion (SVN), Mercurial, Perforce, Code Review, Pull Requests, Git Flow, Trunk-Based Development, Monorepo management (Nx, Turborepo), Conventional Commits, Semantic Versioning.
+## Resume Structure Recommendations
+1. Technical Summary (years experience, primary stack, key achievements)
+2. Technical Skills (categorized: Languages, Frameworks, Cloud, Tools)
+3. Professional Experience (with specific tech stack and quantified impact per role)
+4. Open Source / Side Projects (links to GitHub, description, stars/forks)
+5. Education (degree, relevant coursework if early career)
+6. Certifications (AWS, Azure, GCP, Kubernetes, Scrum Master)
+7. Additional: Conference talks, blog posts, patents, technical writing
 
-8. TESTING AND QUALITY ASSURANCE
-Unit Testing, Integration Testing, End-to-End Testing, Test-Driven Development (TDD), Behavior-Driven Development (BDD), JUnit, pytest, Jest, Mocha, Chai, Cypress, Playwright, Selenium, Appium, Postman, REST Assured, SoapUI, Gatling, JMeter, SonarQube, ESLint, Prettier, Black, Pylint.
-
-9. SOFTWARE DESIGN AND ARCHITECTURE
-Microservices Architecture, Monolithic Architecture, Serverless Architecture, Event-Driven Architecture, CQRS (Command Query Responsibility Segregation), Event Sourcing, Domain-Driven Design (DDD), Hexagonal Architecture, Clean Architecture, MVC (Model-View-Controller), MVVM (Model-View-ViewModel), RESTful APIs, GraphQL, gRPC, WebSockets, Webhooks, Message Queues, RabbitMQ, Apache Kafka, ActiveMQ, Enterprise Integration Patterns, SOLID Principles, Design Patterns (Singleton, Factory, Observer, Strategy, etc.), API Gateway, Service Mesh, Circuit Breaker, Saga Pattern.
-
-10. AGILE AND PROJECT MANAGEMENT
-Agile, Scrum, Kanban, SAFe (Scaled Agile Framework), Lean, XP (Extreme Programming), Sprint Planning, Daily Standup, Retrospective, Backlog Grooming, User Stories, Story Points, Velocity, Burndown Charts, JIRA, Confluence, Trello, Asana, Monday.com, Linear, Notion, Microsoft Project.
-
-11. RESUME KEYWORDS FOR SOFTWARE ENGINEERS
-Full Software Development Life Cycle (SDLC), Object-Oriented Programming (OOP), Data Structures, Algorithms, System Design, Scalability, Performance Optimization, Code Review, Technical Documentation, API Development, Database Design, REST API, Microservices, Cloud Migration, Legacy System Modernization, Agile Methodologies, Cross-Functional Collaboration, Mentoring, Technical Leadership, On-Call Support, Incident Response, Production Deployments, A/B Testing, Feature Flags, Monitoring, Alerting, Logging, Distributed Systems, Concurrency, Multithreading, Caching Strategies, Load Balancing, Disaster Recovery, High Availability, Fault Tolerance, Security Best Practices, OWASP Top 10, Authentication, Authorization, OAuth, JWT, SAML, HTTPS, SSL/TLS.
-
-12. COMMON SOFTWARE ENGINEER INTERVIEW TOPICS
-LeetCode, HackerRank, CodeSignal, System Design Interviews, Whiteboarding, Big O Notation, Time Complexity, Space Complexity, Sorting Algorithms, Search Algorithms, Dynamic Programming, Recursion, Graphs, Trees, Linked Lists, Hash Tables, Stacks, Queues, Heaps, Tries, Behavioral Questions, STAR Method, Technical Phone Screen, On-Site Interview, Take-Home Assignment, Pair Programming.
-
-13. PORTFOLIO AND GITHUB BEST PRACTICES
-GitHub Profile, README Documentation, Open Source Contributions, Personal Projects, Portfolio Website, Technical Blog, Medium Articles, LinkedIn Profile Optimization, GitHub Stars, Forks, Contributions Graph, Green Squares, Code Quality, Repository Organization, Continuous Integration Badges, Project Demos, Live Links.
-
-14. SOFTWARE ENGINEERING CERTIFICATIONS
-AWS Certified Developer - Associate, AWS Certified Solutions Architect, Google Professional Cloud Developer, Microsoft Azure Developer Associate, Oracle Certified Java Programmer, Certified Kubernetes Administrator (CKA), Certified Kubernetes Application Developer (CKAD), Terraform Associate, HashiCorp Certified, Scrum Master Certification (CSM), Professional Scrum Master (PSM), ISTQB Certified Tester.
-
-15. EMERGING TECHNOLOGIES AND TRENDS
-Artificial Intelligence, Machine Learning, Deep Learning, Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), Vector Databases, ChromaDB, Pinecone, Weaviate, LangChain, LlamaIndex, Prompt Engineering, Fine-Tuning, RAG Systems, AI Agents, Autonomous Agents, Edge Computing, IoT, Blockchain, Web3, Smart Contracts, Decentralized Applications (dApps), Quantum Computing, Augmented Reality (AR), Virtual Reality (VR), 5G, WebAssembly, Serverless Computing, JAMStack.
+## Red Flags to Watch For
+- Claims of expertise in too many languages (likely surface-level)
+- No links to code or portfolio for mid/senior roles
+- Resume doesn't mention the tech stack from job description
+- No evidence of working on production systems
+- Gaps unexplained if >6 months
+- Career stagnation (same role title for 5+ years without growth)

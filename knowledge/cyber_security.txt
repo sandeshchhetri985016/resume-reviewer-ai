@@ -1,22 +1,49 @@
-Cyber Security Career Keywords for Resume Optimization
+# Cyber Security Resume Evaluation Guidance
+# Use this to evaluate and provide feedback on cybersecurity resumes.
 
-1. CYBER SECURITY ROLES AND TITLES
-Cyber Security Analyst, Security Analyst, SOC Analyst, Security Operations Center Analyst, Incident Responder, Security Engineer, Security Architect, Network Security Engineer, Application Security Engineer, Cloud Security Engineer, Penetration Tester, Ethical Hacker, Red Team Member, Blue Team Member, Purple Team Member, Security Consultant, Security Auditor, Compliance Analyst, GRC Analyst, Governance Risk and Compliance Specialist, Security Manager, CISO (Chief Information Security Officer), Information Security Officer, Security Specialist, Threat Intelligence Analyst, Digital Forensics Investigator, Malware Analyst, Reverse Engineer, Cyber Security Officer.
+## Key Resume Strengths to Look For
+- Industry certifications (CISSP, CEH, OSCP, Security+, CISA, CISM)
+- Incident response experience with specific outcomes (e.g., "Led response to ransomware attack, restored 200 systems in 48hrs")
+- Security framework knowledge (NIST, ISO 27001, SOC2, Essential Eight)
+- Vulnerability management metrics (e.g., "Reduced mean time to patch from 45 to 7 days")
+- Red team / penetration testing experience with findings documented
+- Compliance and audit experience with regulatory bodies
 
-2. CORE TECHNICAL SKILLS
-Network Security, Firewall Management, Intrusion Detection Systems (IDS), Intrusion Prevention Systems (IPS), SIEM (Security Information and Event Management), SOC Operations, Incident Response, Threat Hunting, Vulnerability Assessment, Penetration Testing, Ethical Hacking, Web Application Security, API Security, Mobile Security, Cloud Security, Endpoint Security, Malware Analysis, Digital Forensics, Reverse Engineering, Threat Intelligence, OSINT, Cryptography, Encryption, PKI, Identity and Access Management, Multi-Factor Authentication, Single Sign-On, Zero Trust Architecture, Security Architecture.
+## Metrics That Impress Security Leaders
+- Incidents detected and response times (MTTD, MTTR)
+- Vulnerabilities remediated and risk reduction scores
+- Security awareness training completion rates
+- Phishing simulation improvement percentages
+- Cost savings from security improvements (e.g., "Reduced breach insurance premium by 30%")
+- Compliance audit scores or certification achievements
 
-3. SECURITY TOOLS AND TECHNOLOGIES
-Wireshark, Nmap, Metasploit, Burp Suite, Nessus, OpenVAS, Qualys, Tenable, Splunk, ELK Stack, Elasticsearch, Logstash, Kibana, QRadar, ArcSight, Azure Sentinel, AWS GuardDuty, AWS Security Hub, CrowdStrike, SentinelOne, Carbon Black, McAfee, Symantec, Palo Alto Networks, Fortinet, Check Point, Cisco ASA, Snort, Suricata, Kali Linux, Parrot OS, Cuckoo Sandbox, Volatility, Autopsy, EnCase, FTK, Hydra, John the Ripper, Hashcat, SQLMap, OWASP ZAP.
+## Key Areas to Evaluate
+### Technical Skills
+- Network security: firewalls, IDS/IPS, VPNs, segmentation
+- Cloud security: AWS Security Hub, Azure Defender, GCP Security Command Center
+- Application security: SAST, DAST, penetration testing, code review
+- Identity & Access Management: Active Directory, SSO, MFA, PAM
+- Security monitoring: SIEM (Splunk, Sentinel, QRadar), SOAR, threat intelligence
 
-4. CERTIFICATIONS
-CompTIA Security+, CompTIA CySA+, CompTIA PenTest+, CISSP (Certified Information Systems Security Professional), CISM (Certified Information Security Manager), CEH (Certified Ethical Hacker), OSCP (Offensive Security Certified Professional), OSWP, GPEN, GWAPT, GCIH, GSEC, GCIA, GNFA, CISCO CCNA Security, CCSP (Certified Cloud Security Professional), AWS Security Specialty, Azure Security Engineer Associate, GIAC, SANS Certifications, ISO 27001 Lead Auditor, ISO 27001 Lead Implementer, CISA (Certified Information Systems Auditor), CRISC, Security Certificate, Diploma of Cyber Security, Bachelor of Cyber Security, Master of Cyber Security.
+### Governance & Compliance
+- Policy development and enforcement
+- Risk assessment methodologies (ISO 31000, FAIR)
+- Business continuity and disaster recovery planning
+- Third-party vendor risk management
+- Data privacy (GDPR, CCPA, Privacy Act)
 
-5. FRAMEWORKS AND STANDARDS
-ISO 27001, ISO 27002, NIST Cybersecurity Framework, NIST SP 800-53, CIS Controls, PCI DSS, HIPAA, GDPR, SOC 2, COBIT, ITIL, Essential Eight, ISM (Information Security Manual), PSPF, ASD Cyber Security Guidelines, ACSC (Australian Cyber Security Centre), MITRE ATT&CK Framework, Cyber Kill Chain, Zero Trust Maturity Model, Essential Eight Maturity Model.
+## Common Resume Mistakes in Cybersecurity
+- Certifications listed without demonstrating application
+- No specific security incidents or outcomes described
+- Vague about tools — "used SIEM" without naming which one
+- Missing the "so what" — what was the business impact of security work?
+- Focusing only on technical skills without governance or communication
+- No mention of security frameworks or standards worked with
 
-6. CYBER SECURITY RESUME KEYWORDS
-Threat Detection, Incident Response, Vulnerability Management, Risk Assessment, Security Operations, Security Monitoring, Log Analysis, Correlation, Alert Triage, Escalation, Containment, Eradication, Recovery, Lessons Learned, Post-Incident Review, Forensics, Chain of Custody, Evidence Handling, Reporting, Documentation, Security Policies, Security Procedures, Security Awareness Training, Phishing Simulations, Tabletop Exercises, Red Team Exercises, Blue Team Exercises, Purple Team Exercises, Business Continuity, Disaster Recovery, Data Protection, Data Classification, Access Control, Principle of Least Privilege, Role-Based Access Control, Segregation of Duties.
-
-7. COMMON CYBER SECURITY INTERVIEW TOPICS
-OWASP Top 10, Network Protocols, TCP/IP, OSI Model, Encryption Methods, Authentication Methods, Risk Management, Incident Response Process, Phishing Recognition, Social Engineering, Password Security, Multi-Factor Authentication, Cloud Security Fundamentals, Security Best Practices, Ethical Hacking Methodology, Reporting Structure, Compliance Requirements, Career Motivation, Continuous Learning, Industry Trends.
+## Resume Structure Recommendations
+1. Professional Summary (years in security, specialisation, certs)
+2. Technical Skills (Domain, Tools, Frameworks)
+3. Certifications (with dates and cert numbers)
+4. Professional Experience (incident response, projects, outcomes)
+5. Education (degree, relevant coursework)
+6. Additional: CTF participations, conference talks, security research

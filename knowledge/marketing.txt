@@ -1,28 +1,56 @@
-Marketing & Digital Marketing Career Keywords for Resume Optimization
+# Marketing Resume Evaluation Guidance
+# Use this to evaluate and provide feedback on marketing resumes.
 
-1. MARKETING ROLES AND TITLES
-Marketing Coordinator, Marketing Manager, Marketing Director, Chief Marketing Officer (CMO), Digital Marketing Specialist, Digital Marketing Manager, SEO Specialist, SEM Specialist, PPC Specialist, Social Media Manager, Social Media Coordinator, Content Marketing Manager, Content Writer, Copywriter, Brand Manager, Product Marketing Manager, Marketing Analyst, Marketing Data Analyst, Growth Marketing Manager, Growth Hacker, Performance Marketing Manager, Email Marketing Specialist, Marketing Automation Specialist, CRM Marketing Manager, Campaign Manager, Communications Manager, PR Manager, Public Relations Officer, Events Coordinator, Events Manager, Market Research Analyst, Brand Strategist, Creative Director, Art Director, Graphic Designer, Marketing Intern.
+## Key Resume Strengths to Look For
+- Campaign performance metrics (e.g., "Generated 500+ qualified leads from LinkedIn campaign with 12% conversion rate")
+- ROI attribution (e.g., "Achieved 4.5x ROAS on Google Ads campaign")
+- Platform expertise (HubSpot, Salesforce, Google Analytics, Mailchimp, SEMrush)
+- Content marketing examples with engagement and conversion data
+- A/B testing results and optimization cycles
+- Channel mix experience (SEO, SEM, social, email, content, paid)
 
-2. DIGITAL MARKETING CHANNELS AND TACTICS
-SEO (Search Engine Optimization), SEM (Search Engine Marketing), PPC (Pay Per Click), Google Ads, Google Shopping, Display Advertising, Programmatic Advertising, Retargeting, Remarketing, Social Media Marketing, Facebook Ads, Instagram Ads, LinkedIn Ads, TikTok Ads, Pinterest Ads, Twitter Ads, Snapchat Ads, Content Marketing, Blogging, Video Marketing, YouTube Marketing, Podcasting, Influencer Marketing, Affiliate Marketing, Email Marketing, Newsletters, Drip Campaigns, Marketing Automation, SMS Marketing, Push Notifications, Web Push, App Marketing, Mobile Marketing, Local SEO, Google My Business, Online Reputation Management, ORM.
+## Metrics That Impress Marketing Directors
+- Traffic growth (MoM/YoY), lead generation numbers
+- Conversion rate improvements through optimization
+- Cost per acquisition (CPA) reduction
+- ROI and ROAS on marketing spend
+- Email open rates, click-through rates, list growth
+- Social media engagement rates and follower growth
+- Marketing-qualified leads (MQLs) generated
 
-3. CONTENT AND CREATIVE SKILLS
-Content Strategy, Content Creation, Copywriting, SEO Writing, Blog Writing, Article Writing, Website Copy, Landing Page Copy, Email Copy, Ad Copy, Social Media Content, Video Scripts, Storyboarding, Creative Direction, Visual Design, Brand Identity, Logo Design, Graphic Design, Photography, Video Production, Video Editing, Audio Production, Podcast Production, Canva, Adobe Creative Suite, Photoshop, Illustrator, Premiere Pro, Final Cut Pro, DaVinci Resolve, Figma, Sketch.
+## Key Areas to Evaluate
+### Digital Marketing
+- SEO: keyword rankings, organic traffic, backlink profiles
+- SEM: Google Ads, Bing Ads, campaign optimization
+- Social: organic and paid strategy across platforms
+- Email: segmentation, automation flows, A/B testing
+- Content: blog, video, whitepapers, case studies
 
-4. ANALYTICS AND DATA SKILLS
-Google Analytics, Google Search Console, Google Tag Manager, Google Data Studio, Looker, Tableau, Power BI, Meta Business Suite, Facebook Pixel, Conversion Tracking, A/B Testing, Multivariate Testing, Heatmaps, Session Recording, Click Tracking, User Behavior Analytics, Hotjar, Crazy Egg, Lucky Orange, SEMrush, Ahrefs, Moz, Majestic, Screaming Frog, SpyFu, SimilarWeb, BuzzSumo, Keyword Research, Keyword Analysis, Competitor Analysis, Market Analysis, Customer Insights, Audience Segmentation, Persona Development, Customer Journey Mapping, Attribution Modeling, ROAS, ROI, CPA, CPC, CPM, CTR, Conversion Rate, Bounce Rate, Engagement Rate.
+### Marketing Operations
+- Marketing automation tools (HubSpot, Marketo, Pardot)
+- CRM integration and lead scoring
+- Analytics and attribution modeling
+- Budget management and forecasting
+- Agency and vendor management
 
-5. TOOLS AND PLATFORMS
-Google Ads, Google Analytics, Google Tag Manager, Google Search Console, Google Data Studio, Google Optimize, Meta Ads Manager, Meta Business Suite, LinkedIn Campaign Manager, TikTok Ads Manager, Twitter Ads, Pinterest Ads, Snapchat Ads, SEMrush, Ahrefs, Moz, Screaming Frog, Mailchimp, HubSpot, Salesforce Marketing Cloud, Marketo, Pardot, ActiveCampaign, Klaviyo, SendGrid, Constant Contact, ConvertKit, Drip, WordPress, Shopify, Webflow, Squarespace, Wix, Unbounce, Instapage, Leadpages, Canva, Figma, Adobe Creative Cloud, Hootsuite, Buffer, Sprout Social, Later, Loomly, Asana, Trello, Monday.com, JIRA, Confluence, Slack, Zoom, Microsoft Teams.
+### Strategic Skills
+- Brand positioning and messaging
+- Market research and competitive analysis
+- Customer journey mapping
+- Campaign strategy and go-to-market planning
 
-6. STRATEGY AND PLANNING
-Marketing Strategy, Digital Strategy, Content Strategy, Brand Strategy, Go-to-Market Strategy, Product Launch, Campaign Planning, Media Planning, Budget Management, Resource Allocation, Calendar Management, Editorial Calendar, Content Calendar, Marketing Funnel, Top of Funnel, Middle of Funnel, Bottom of Funnel, Awareness, Consideration, Conversion, Retention, Advocacy, Customer Lifecycle, Customer Acquisition, Customer Retention, Customer Loyalty, Brand Awareness, Brand Equity, Market Positioning, Differentiation, Value Proposition, USP, Target Audience, ICP, Buyer Persona, Segmentation, Targeting, Positioning (STP), SWOT Analysis, PESTLE Analysis, Competitive Analysis, Market Research, Surveys, Focus Groups.
+## Common Resume Mistakes in Marketing
+- Vanity metrics without context (e.g., "10K followers" without engagement rate)
+- No ROI or conversion data — only activity descriptions
+- Vague about specific role in team projects
+- Missing platform names or tools used
+- No mention of budget managed or campaign spend
+- Failing to show progression in scope or responsibility
 
-7. CERTIFICATIONS AND QUALIFICATIONS
-Google Ads Certification, Google Analytics Certification, HubSpot Academy Certifications, Meta Certified Digital Marketing Associate, Meta Certified Community Manager, LinkedIn Marketing Labs, Semrush Academy Certifications, Hootsuite Social Marketing Certification, Content Marketing Institute Certification, Digital Marketing Institute Certification, Diploma of Digital Marketing, Diploma of Marketing, Bachelor of Marketing, Bachelor of Business (Marketing), Master of Marketing, Master of Digital Marketing.
-
-8. MARKETING RESUME KEYWORDS
-Campaign Management, Budget Management, ROI Analysis, KPI Tracking, Cross-Functional Collaboration, Stakeholder Management, Agency Management, Vendor Management, Team Leadership, Mentoring, Project Management, Agile Marketing, Scrum, Kanban, Data-Driven Decision Making, Analytical Thinking, Creative Thinking, Communication, Presentation, Negotiation, Problem Solving, Adaptability, Continuous Learning, Trend Awareness, Industry Knowledge.
-
-9. COMMON MARKETING INTERVIEW TOPICS
-Campaign Examples, Metrics-Driven Results, Budget Management Experience, Tool Proficiency, A/B Testing Experience, Content Strategy Approach, Social Media Strategy, SEO Knowledge, Industry Trends, Creative Process, Analytical Approach, Team Collaboration, Stakeholder Management, Career Goals.
+## Resume Structure Recommendations
+1. Professional Summary (years experience, channels, industries)
+2. Technical Skills (Platforms, Tools, Analytics)
+3. Professional Experience (channel, budget, metrics per role)
+4. Education (degree, relevant certifications)
+5. Certifications (Google Ads, HubSpot, Salesforce, Meta Blueprint)
+6. Portfolio (campaign examples, case studies, links)

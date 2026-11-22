@@ -1,28 +1,57 @@
-Data Science & Analytics Career Keywords for Resume Optimization
+# Data Science & Analytics Resume Evaluation Guidance
+# Use this to evaluate and provide feedback on data science resumes.
 
-1. DATA SCIENCE ROLES AND TITLES
-Data Scientist, Data Analyst, Data Engineer, Machine Learning Engineer, AI Engineer, ML Ops Engineer, Business Intelligence Analyst, Business Intelligence Developer, Analytics Manager, Data Architect, Data Warehouse Engineer, Database Administrator, Quantitative Analyst, Research Scientist, Applied Scientist, NLP Engineer, Computer Vision Engineer, Deep Learning Engineer, Data Visualization Specialist, Statistical Analyst, Marketing Analyst, Product Analyst, Operations Analyst, Financial Analyst, Risk Analyst, Data Governance Analyst, Data Quality Analyst, Analytics Consultant.
+## Key Resume Strengths to Look For
+- End-to-end data science project examples (from data collection to deployment)
+- Quantified business impact (e.g., "ML model increased conversion by 15%", "Saved $500K/year through churn prediction")
+- Published work: papers, blog posts, Kaggle rankings, GitHub repositories
+- A/B testing and experiment design experience
+- Production model deployment and monitoring (MLOps)
+- Domain expertise combined with technical skills
 
-2. PROGRAMMING LANGUAGES AND LIBRARIES
-Python, Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch, Keras, JAX, Hugging Face, LangChain, R, Tidyverse, dplyr, ggplot2, caret, SQL, PL/SQL, T-SQL, Julia, Scala, Spark, PySpark, Java, C++, MATLAB, SAS, SPSS, Stata, VBA, JavaScript, D3.js, HTML, CSS, Bash, PowerShell.
+## Metrics That Impress Data Science Leads
+- Model performance improvements (accuracy, F1, AUC-ROC)
+- Business metrics improved (revenue, retention, cost reduction)
+- Data pipeline throughput and efficiency
+- Time from experiment to production (model velocity)
+- Number of models in production
+- Stakeholder impact and cross-team collaboration examples
 
-3. DATA MANIPULATION AND ANALYSIS
-Data Wrangling, Data Cleaning, Data Preprocessing, Feature Engineering, Feature Selection, Dimensionality Reduction, PCA, t-SNE, UMAP, Exploratory Data Analysis (EDA), Statistical Analysis, Hypothesis Testing, A/B Testing, Regression Analysis, Linear Regression, Logistic Regression, Time Series Analysis, ARIMA, SARIMA, Prophet, Clustering, K-Means, Hierarchical Clustering, DBSCAN, Anomaly Detection, Outlier Detection.
+## Key Areas to Evaluate
+### Technical Skills Depth
+- Python (pandas, numpy, scikit-learn, TensorFlow/PyTorch)
+- SQL proficiency (complex queries, window functions, query optimization)
+- Cloud ML services (SageMaker, Vertex AI, Azure ML)
+- MLOps: Docker, MLflow, Kubeflow, CI/CD for models
+- Visualization: Tableau, Power BI, Looker, matplotlib
 
-4. MACHINE LEARNING AND AI
-Supervised Learning, Unsupervised Learning, Reinforcement Learning, Classification, Regression, Random Forest, XGBoost, LightGBM, CatBoost, Gradient Boosting, Support Vector Machines, Decision Trees, Neural Networks, Deep Learning, Convolutional Neural Networks (CNN), Recurrent Neural Networks (RNN), LSTM, GRU, Transformers, BERT, GPT, Large Language Models (LLMs), RAG (Retrieval-Augmented Generation), Fine-Tuning, Transfer Learning, Ensemble Methods, Bagging, Boosting, Stacking, Cross-Validation, Hyperparameter Tuning, Grid Search, Random Search, Bayesian Optimization, Model Evaluation, ROC-AUC, Precision-Recall, Confusion Matrix, F1 Score, MSE, MAE, RMSE, R-Squared.
+### Statistical Knowledge
+- Hypothesis testing and statistical significance
+- Experimental design and causal inference
+- Time series analysis and forecasting
+- Bayesian methods and uncertainty quantification
+- Feature engineering and selection approaches
 
-5. DATA ENGINEERING AND BIG DATA
-ETL (Extract Transform Load), ELT, Data Pipelines, Apache Spark, Apache Hadoop, MapReduce, Hive, Pig, Apache Kafka, Apache Flink, Apache Airflow, Prefect, dbt, Data Warehousing, Snowflake, BigQuery, Redshift, Data Lakes, Delta Lake, Lakehouse Architecture, Apache Iceberg, Apache Hudi, Data Modeling, Star Schema, Snowflake Schema, Dimension Tables, Fact Tables, Slowly Changing Dimensions, Data Governance, Data Cataloging, Data Lineage, Data Quality, Master Data Management.
+### Communication & Impact
+- Ability to translate technical findings to business stakeholders
+- Data storytelling and visualization clarity
+- Documentation and reproducibility practices
+- Presentation and report writing skills
 
-6. DATA VISUALIZATION AND BI TOOLS
-Tableau, Power BI, Looker, Google Data Studio, Qlik, QlikView, QlikSense, Metabase, Apache Superset, Grafana, Matplotlib, Seaborn, Plotly, Dash, Streamlit, Bokeh, ggplot2, Data Storytelling, Dashboards, Reports, KPIs, Metrics, Scorecards, Visual Analytics, Interactive Visualizations.
+## Common Resume Mistakes in Data Science
+- Only showing Jupyter notebooks, no production experience
+- No GitHub portfolio or project links
+- Vague about impact — "built a model" without saying what it achieved
+- Too much emphasis on Kaggle competitions, not enough on real-world problems
+- Missing SQL proficiency (critical for most roles)
+- No mention of data quality challenges or how they were handled
+- Overstating model complexity without understanding trade-offs
 
-7. CERTIFICATIONS AND QUALIFICATIONS
-Certified Data Scientist, AWS Certified Machine Learning Specialty, Google Professional Data Engineer, Microsoft Azure Data Scientist Associate, IBM Data Science Professional Certificate, SAS Certified Data Scientist, Cloudera Data Analyst, Databricks Data Engineer Associate, Databricks Data Scientist, TensorFlow Developer Certificate, Deep Learning Specialization (Coursera), Bachelor of Data Science, Bachelor of Computer Science, Master of Data Science, Master of Analytics, PhD in Data Science or related field.
-
-8. DATA SCIENCE RESUME KEYWORDS
-End-to-End Data Science, Full Data Pipeline, Data-Driven Decision Making, Business Intelligence, Insights, Recommendations, Stakeholder Communication, Cross-Functional Collaboration, Agile Methodology, Scrum, Kanban, JIRA, Confluence, Version Control, Git, GitHub, GitLab, Experiment Design, Hypothesis Testing, Statistical Significance, Confidence Intervals, Predictive Modeling, Forecasting, Optimization, Personalization, Recommendation Systems, Natural Language Processing, Text Mining, Sentiment Analysis, Named Entity Recognition, Topic Modeling, Image Classification, Object Detection, Speech Recognition.
-
-9. COMMON DATA SCIENCE INTERVIEW TOPICS
-Coding Challenges, SQL Queries, Data Manipulation, Statistical Concepts, Probability, Case Studies, Product Sense, Metric Definition, Experiment Design, A/B Testing, Machine Learning Concepts, Model Selection, Feature Importance, Overfitting, Underfitting, Bias-Variance Tradeoff, Regularization, Business Acumen, Communication Skills, Portfolio Review, Take-Home Assignments, Whiteboarding, STAR Method, Behavioral Questions.
+## Resume Structure Recommendations
+1. Professional Summary (domain expertise, key technical skills, impact examples)
+2. Technical Skills (Languages, ML Libraries, Cloud, Data Tools)
+3. Professional Experience (business problem → approach → result format)
+4. Projects & Publications (GitHub links, papers, blog posts)
+5. Education (degree, relevant coursework)
+6. Certifications (AWS ML, TensorFlow, Coursera specializations)
+7. Additional: Kaggle rankings, conference talks, open source contributions
