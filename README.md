@@ -14,7 +14,7 @@
 
 ### 🔍 Two Analysis Modes
 - **Resume Analysis** — holistic evaluation of skills, experience, clarity, impact, and ATS compatibility
-- **ATS Job Match** — compares your resume against a job description with **keyword gap analysis** showing exactly which keywords are missing
+- **ATS Job Match** — compares your resume against a job description with **concept-level + keyword + semantic gap analysis** showing exactly which skills and keywords are missing
 
 ### 📊 Deterministic Scoring (No LLM Bias)
 - **Weighted rubric** with 5 categories: Formatting (15%), ATS Readiness (20%), Experience Quality (25%), Achievement Density (20%), Skills Relevance (20%)
